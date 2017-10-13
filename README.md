@@ -33,8 +33,8 @@ COGS:
 INSTALLATION:
 -------------
 
-Meant to be used with Red's downloader by adding it with:  
-`[p]cog repo add gkit_cogs https://github.com/gannon93/gkit_cogs`
+<!-- Meant to be used with Red's downloader by adding it with:  
+`[p]cog repo add gkit_cogs https://github.com/gannon93/gkit_cogs` -->
 
-
+These cogs are in __very__ early development, and are not yet distributed through Red's downloader.
 
