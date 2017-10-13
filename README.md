@@ -15,7 +15,7 @@ Gannon Toolkit Library - Cogs (gkit_cogs)
 DESCRIPTION
 -----------
 
-This repository is a collection of cogs written for [Twentsix26's](https://github.com/Twentysix26) [Red-DiscordBot](https://github.com/Cog-Creators/Red-DiscordBot) These cogs are focused on random little things, nothing ground breaking.  
+This repository is a collection of cogs written for [Twentysix's](https://github.com/Twentysix26) [Red-DiscordBot](https://github.com/Cog-Creators/Red-DiscordBot) These cogs are focused on random little things, nothing ground breaking.  
 
 ---
 
