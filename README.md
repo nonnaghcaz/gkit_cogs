@@ -4,6 +4,8 @@
 Gannon Toolkit Library - Cogs (gkit_cogs)
 =========================================
 
+---
+
 <a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/raiq3oRu2yGcVNAnbBGftY8G/gannon93/gkit_cogs'>
   <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/raiq3oRu2yGcVNAnbBGftY8G/gannon93/gkit_cogs.svg' />
 </a>
