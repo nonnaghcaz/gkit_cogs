@@ -1,0 +1,18 @@
+[report]
+omit =
+    */python?.?/*
+    */site-packages/*
+    *__init__*
+    */tests/*
+    */test/*
+exclude_lines =
+    arcpy.
+    pragma: no cover
+    def __repr__
+    if DEBUG:
+    if self.debug:
+    if settings.DEBUG
+    if 0:
+    if __name__ == .__main__.:
+    except
+    raise

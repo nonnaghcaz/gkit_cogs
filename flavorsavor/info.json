@@ -1,0 +1,9 @@
+{
+    "AUTHOR" : "Gannon",
+    "SHORT" : "Savor that Fieri flavor!",
+    "DESCRIPTION" : "Adds some pizzaz to your day with some Flavortown culture.",
+    "DISABLED" : false,
+    "NAME" : "FlavorSavor",
+    "TAGS" : ["inspirational", "flavortown", "Fieri"],
+    "INSTALL_MSG" : "Usage: `[p]savor`"
+}
