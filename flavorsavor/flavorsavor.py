@@ -19,7 +19,7 @@ class FlavorSavor:
 
     def __init__(self, bot):
         self.bot = bot
-        self.quotes = fileIO("data/insult/quotes.json", "load")
+        self.quotes = fileIO("data/flavorsavor/quotes.json", "load")
 
     @commands.command(pass_context=True, no_pm=True)
     async def savor(self, context):
