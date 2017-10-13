@@ -1,0 +1,5 @@
+wheel
+coverage
+codecov
+coveralls
+mock
