@@ -1,17 +1,32 @@
+"""Add some pizzaz to your day with a dose of Flavortown culture.
+
+This is my first venture into Red-DiscordBot cogs. The concept and codebase
+was __heavily__ inspired by Twentysix26's insult cog:
+    https://github.com/Twentysix26/26-Cogs/tree/master/insult
+"""
+
 import discord
 from discord.ext import commands
+from .utils.dataIO import fileIO
 from random import choice as randchoice
-import json
 
 
 class FlavorSavor:
+    """Savor the Fieri flavor.
+
+    Cog displays random Guy Fieri quotes.
+    """
 
     def __init__(self, bot):
         self.bot = bot
-        self.quotes = json.load("./data/quotes.json")
+        self.quotes = fileIO("data/insult/quotes.json", "load")
 
     @commands.command(pass_context=True, no_pm=True)
     async def savor(self, context):
+        """Display a random Guy Fieri quote.
+
+        Usage: `[p]savor`
+        """
         await self.bot.say(
             context.message.author.mention + ' ' + randchoice(self.quotes))
 
