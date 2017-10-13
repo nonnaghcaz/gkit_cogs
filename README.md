@@ -8,7 +8,14 @@ Gannon Toolkit Library - Cogs (gkit_cogs)
   <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/raiq3oRu2yGcVNAnbBGftY8G/gannon93/gkit_cogs.svg' />
 </a>
 
+---
+
+DESCRIPTION
+-----------
+
 This repository is a collection of cogs written for [Twentsix26's](https://github.com/Twentysix26) [Red-DiscordBot](https://github.com/Cog-Creators/Red-DiscordBot) These cogs are focused on random little things, nothing ground breaking.  
+
+---
 
 COGS
 ----
@@ -17,6 +24,8 @@ COGS
     - Savor that Fieri flavor!
     - Usage: `[p]savor`
 
+---
+
 INSTALLATION
 ------------
 
@@ -24,9 +33,4 @@ INSTALLATION
 `[p]cog repo add gkit_cogs https://github.com/gannon93/gkit_cogs` -->
 
 These cogs are in __very__ early development, and are not yet distributed through Red's downloader.
-
-LICENSE
--------
-
-Please see MIT License for details. This project is open source and you are free to modify my work so long as you credit me.
 
