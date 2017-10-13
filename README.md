@@ -8,16 +8,16 @@ Written by Zachary Gannon.
 
 ---
 
-<!-- <a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/raiq3oRu2yGcVNAnbBGftY8G/gannon93/gkit_cogs'>
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/raiq3oRu2yGcVNAnbBGftY8G/gannon93/gkit_cogs'>
   <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/raiq3oRu2yGcVNAnbBGftY8G/gannon93/gkit_cogs.svg' />
-</a> -->
+</a>
 
 ---
 
 DESCRIPTION:
 ------------
 
-This repository is a collection of cogs written for [Twentsix26's](https://github.com/Twentysix26) [Red-DiscordBot](https://github.com/Cog-Creators/Red-DiscordBot) These cogs are focused on random little things, nothing ground breaking.   
+This repository is a collection of cogs written for [Twentsix26's](https://github.com/Twentysix26) [Red-DiscordBot](https://github.com/Cog-Creators/Red-DiscordBot) These cogs are focused on random little things, nothing ground breaking.  
 
 ---
 
@@ -33,8 +33,8 @@ COGS:
 INSTALLATION:
 -------------
 
-Meant to be used with Red's downloader by adding it with:
-[p]cog repo add gkit_cogs https://github.com/gannon93/gkit_cogs
+Meant to be used with Red's downloader by adding it with:  
+`[p]cog repo add gkit_cogs https://github.com/gannon93/gkit_cogs`
 
 
 
