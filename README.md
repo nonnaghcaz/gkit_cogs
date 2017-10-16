@@ -25,6 +25,9 @@ COGS
   - FlavorSavor
     - Savor that Fieri flavor!
     - Usage: `[p]savor`
+  - PEP20
+    - The word of the BDFL is law.
+    - Usage: `[p]assimilate`
 
 ---
 

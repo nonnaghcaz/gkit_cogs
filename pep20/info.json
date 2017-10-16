@@ -1,0 +1,9 @@
+{
+    "AUTHOR" : "Gannon",
+    "SHORT" : "The word of the BDFL is law.",
+    "DESCRIPTION" : "The word of the BDFL is law.",
+    "DISABLED" : false,
+    "NAME" : "BDFL",
+    "TAGS" : ["zen", "pep20", "law"],
+    "INSTALL_MSG" : "Usage: `[p]assimilate`"
+}
