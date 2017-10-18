@@ -43,3 +43,27 @@ INSTALLATION
 These cogs are in __very__ early development, but can be downloaded through Red's distributor and [Cogs.Red](https://cogs.red/cogs/gannon93/gkit_cogs/):  
 `[p]cog repo add gkit_cogs https://github.com/gannon93/gkit_cogs`
 
+---
+
+CONTRIBUTION
+------------
+
+Found a bug in my cogs? Thinking of a way to add some extra spice to my cogs? 
+Boy oh boy, you better add an issue and a PR if you can fix the bug or add the enhancement yourself.
+
+---
+
+LICENSE
+-------
+
+The project is now licensed under [MIT](https://github.com/gannon93/gkit_cogs/blob/master/LICENSE).
+
+---
+
+CREDITS and THANKS
+------------------
+
+  - [Twentysix](https://github.com/Twentysix26), for making a great Python subcommunity and finally providing me with a platform to exercise my Python/Gaming/Internet passion. 
+  - [Redjumpman](https://github.com/Redjumpman) and [irdumb](https://github.com/irdumbs), for unknowingly being my Cog Creator senseis. 
+  - [Orels1](https://github.com/orels1), for creating the swanky Red-Portal cog registry at [Cogs.Red](http://cogs.red).
+  - The Red community, for constantly coming up with bigger and better ideas for cogs.
