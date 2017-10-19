@@ -36,7 +36,7 @@ COGS
     - Usage: `[p]assimilate`
   - _WannaCookie_
     - What, do you want a cookie?
-    - Usage: `[p] wanna [command {options}]`
+    - Usage: `[p]wanna [command {options}]`
     - Commands:
       - cookie {@user}
 
