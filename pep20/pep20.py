@@ -1,9 +1,11 @@
+"""Displays the word of the BDFL."""
+
 import discord
 from discord.ext import commands
 
 
 ZEN_OF_PYTHON = """
-THE WORD OF THE BDFL (as told by Tim Peters)
+HEREIN LIES THE WORD OF THE BDFL (as told by Tim Peters):
 
 Beautiful is better than ugly.
 Explicit is better than implicit.
@@ -34,8 +36,9 @@ class BDFL:
 
     @commands.command(pass_context=True)
     async def assimilate(self, context):
+        """Display the word of the BDFL."""
         await self.bot.say(
-            context.message.author.mention + '\n' + ZEN_OF_PYTHON)
+            'Listen close my child, ' + context.message.author.mention + '\n\n' + ZEN_OF_PYTHON)
 
 
 def setup(bot):
