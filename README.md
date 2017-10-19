@@ -50,6 +50,14 @@ These cogs are in __very__ early development, but can be downloaded through Red'
 
 ---
 
+TO-DO
+-----
+
+  - More memes
+  - More fupa
+
+---
+
 CONTRIBUTION
 ------------
 
