@@ -28,12 +28,17 @@ COGS
   - _FlavorSavor_
     - Savor that Fieri flavor!
     - Usage: `[p]savor`
-  - _PEP20_
-    - The word of the BDFL is law.
-    - Usage: `[p]assimilate`
   - _PapaBless_
     - COMING SOON
     - Vape Naysh yall `\//\`
+  - _PEP20_
+    - The word of the BDFL is law.
+    - Usage: `[p]assimilate`
+  - _WannaCookie_
+    - What, do you want a cookie?
+    - Usage: `[p] wanna [command {options}]`
+    - Commands:
+      - cookie {@user}
 
 ---
 
