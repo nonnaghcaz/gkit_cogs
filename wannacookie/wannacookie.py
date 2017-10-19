@@ -11,22 +11,13 @@ class WannaCookie:
 
     @commands.group(pass_context=True)
     async def wanna(self, ctx):
-        '''What, do you want a...
-
-        Usage: `[p]wanna [command {options}]`
-
-        Commands:
-            - cookie {@user}
-        '''
+        '''What, do you want a...'''
         if ctx.invoked_subcommand is None:
             await self.bot.say("Type `[p]help wanna` for info.")
 
     @wanna.command(name='cookie', pass_context=True)
     async def cookie(self, ctx, user: discord.Member=None):
-        '''What, do you want a cookie?
-
-        Usage: `[p]wanna cookie {@user}`
-        '''
+        '''What, do you want a cookie?'''
         msg = 'What, do you want a cookie {}?'
         if user is not None:
             if user.id == self.bot.user.id:
