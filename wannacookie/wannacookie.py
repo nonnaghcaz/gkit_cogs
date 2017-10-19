@@ -9,7 +9,7 @@ class WannaCookie:
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(name='wanna', pass_context=True, no_pm=True)
+    @commands.group(pass_context=True)
     async def wanna(self, ctx):
         if ctx.invoked_subcommand is None:
             await self.bot.say("Type help wanna for info.")
