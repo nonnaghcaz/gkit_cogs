@@ -21,7 +21,7 @@ class FlavorSavor:
         self.bot = bot
         self.quotes = fileIO("data/flavorsavor/quotes.json", "load")
 
-    @commands.command(pass_context=True, no_pm=True)
+    @commands.command(pass_context=True)
     async def savor(self, context):
         """Display a random Guy Fieri quote.
 
