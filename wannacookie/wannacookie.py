@@ -1,4 +1,4 @@
-'''What, do you want a...'''
+"""What, do you want a..."""
 
 import discord
 from discord.ext import commands
