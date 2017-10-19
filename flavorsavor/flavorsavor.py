@@ -12,10 +12,7 @@ from random import choice as randchoice
 
 
 class FlavorSavor:
-    """Savor the Fieri flavor.
-
-    Cog displays random Guy Fieri quotes.
-    """
+    """Cog displays random Guy Fieri quotes."""
 
     def __init__(self, bot):
         self.bot = bot
@@ -23,10 +20,7 @@ class FlavorSavor:
 
     @commands.command(pass_context=True)
     async def savor(self, context):
-        """Display a random Guy Fieri quote.
-
-        Usage: `[p]savor`
-        """
+        """Displays a random Guy Fieri quote."""
         await self.bot.say(
             context.message.author.mention + ' ' + randchoice(self.quotes))
 
