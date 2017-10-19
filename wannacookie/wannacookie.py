@@ -1,4 +1,4 @@
-'''What, do you want a cookie?'''
+'''What, do you want a...'''
 
 import discord
 from discord.ext import commands
@@ -11,6 +11,13 @@ class WannaCookie:
 
     @commands.group(pass_context=True)
     async def wanna(self, ctx):
+        '''What, do you want a...
+
+        Usage: `[p]wanna [command {options}]`
+
+        Commands:
+            - cookie {@user}
+        '''
         if ctx.invoked_subcommand is None:
             await self.bot.say("Type `[p]help wanna` for info.")
 
@@ -18,7 +25,7 @@ class WannaCookie:
     async def cookie(self, ctx, user: discord.Member=None):
         '''What, do you want a cookie?
 
-        Usage: `[p] wanna cookie {@user}`
+        Usage: `[p]wanna cookie {@user}`
         '''
         msg = 'What, do you want a cookie {}?'
         if user is not None:
