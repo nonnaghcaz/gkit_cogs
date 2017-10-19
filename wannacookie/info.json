@@ -1,0 +1,9 @@
+{
+    "AUTHOR" : "Gannon",
+    "SHORT" : "What, do you want a cookie?",
+    "DESCRIPTION" : "What, do you want a cookie?",
+    "DISABLED" : false,
+    "NAME" : "WannaCookie",
+    "TAGS" : ["fun"],
+    "INSTALL_MSG" : "Usage: `[p]help wanna`"
+}
