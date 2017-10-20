@@ -28,12 +28,15 @@ COGS
   - _FlavorSavor_
     - Savor that Fieri flavor!
     - Usage: `[p]savor`
-  - _PapaBless_
-    - COMING SOON
+  - (__COMING SOON__) _PapaBless_
     - Vape Naysh yall `\//\`
+    - Usage: `UNAVAILABLE`
   - _PEP20_
     - The word of the BDFL is law.
     - Usage: `[p]assimilate`
+  - (__COMING SOON__) _SaltyDebt_
+    - Feed your Salty Bet gambling addiction.
+    - Usage: `UNAVAILABLE`
   - _WannaCookie_
     - What, do you want a cookie?
     - Usage: `[p]wanna [command {options}]`
