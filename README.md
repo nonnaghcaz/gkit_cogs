@@ -38,7 +38,7 @@ COGS
     - What, do you want a cookie?
     - Usage: `[p]wanna [command {options}]`
     - Commands:
-      - cookie {@user}
+      - `cookie {@user}`
 
 ---
 
