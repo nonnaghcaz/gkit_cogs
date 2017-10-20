@@ -1,7 +1,7 @@
 {
     "AUTHOR" : "Gannon",
-    "INSTALL_MSG" : "Hey, thanks for installing my cogs!",
+    "INSTALL_MSG" : "`[p]cog info gkit_cogs`",
     "NAME" : "gkit_cogs",
     "SHORT" : "Random little cogs that will probably help no one.",
-    "DESCRIPTION" : "Random little cogs that will probably help no one."
+    "DESCRIPTION" : "Random little cogs that will probably help no one.\nCOGS:\n\n\t- _FlavorSavor_\n\t\t- Savor that Fieri flavor!\n\t\t- Usage: `[p]savor`\n\t- _PEP20_\n\t\t- The word of the BDFL is law.\n\t\t- Usage: `[p]assimilate`\n\t- _WannaCookie_\n\t\t- What, do you want a cookie?\n\t\t- Usage: `[p]wanna [command {options}]`\n\t\t- Commands:\n\t\t\t- cookie {@user}"
 }
