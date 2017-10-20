@@ -41,7 +41,7 @@ COGS
     - What, do you want a cookie?
     - Usage: `[p]wanna [command {options}]`
     - Commands:
-      - `cookie {@user}`
+      - `cookie`: `[p]wanna cookie {@user}`
 
 ---
 
@@ -49,7 +49,9 @@ INSTALLATION
 ------------
 
 These cogs are in __very__ early development, but can be downloaded through Red's distributor and [Cogs.Red](https://cogs.red/cogs/gannon93/gkit_cogs/):  
-`[p]cog repo add gkit_cogs https://github.com/gannon93/gkit_cogs`
+
+  - `[p]cog repo add gkit_cogs https://github.com/gannon93/gkit_cogs`
+  - `[p]cog install gkit_cogs <cog>`
 
 ---
 
