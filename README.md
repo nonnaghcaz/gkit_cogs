@@ -18,8 +18,6 @@ DESCRIPTION
 
 This repository is a collection of cogs written for [Twentysix's](https://github.com/Twentysix26) [Red-DiscordBot](https://github.com/Cog-Creators/Red-DiscordBot).  
 
-So far I've made meme-y cogs, because my life is slowly revealing to be an elaborate meme-ruse.  
-
 ---
 
 COGS
@@ -28,13 +26,13 @@ COGS
   - _FlavorSavor_
     - Savor that Fieri flavor!
     - Usage: `[p]savor`
-  - (__COMING SOON__) _PapaBless_
+  - __[COMING SOON]__ _PapaBless_
     - Vape Naysh yall `\//\`
     - Usage: `UNAVAILABLE`
   - _PEP20_
     - The word of the BDFL is law.
     - Usage: `[p]assimilate`
-  - (__COMING SOON__) _SaltyDebt_
+  - __[COMING SOON]__ _SaltyDebt_
     - Feed your Salty Bet gambling addiction.
     - Usage: `UNAVAILABLE`
   - _WannaCookie_
@@ -53,18 +51,10 @@ These cogs are in __very__ early development, but can be downloaded through Red'
 
 ---
 
-TO-DO
------
-
-  - More memes
-  - More fupa
-
----
-
 CONTRIBUTION
 ------------
 
-Found a bug in my cogs? Thinking of a way to add some extra spice to my cogs? 
+Found a bug or thinking of a way to add some extra spice to my cogs? 
 Boy oh boy, you better add an issue and a PR if you can fix the bug or add the enhancement yourself.
 
 ---
