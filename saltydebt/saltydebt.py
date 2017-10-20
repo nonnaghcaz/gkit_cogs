@@ -18,12 +18,17 @@ class SaltyDebt:
     @salty.command(name='balance', pass_context=True)
     async def balance(self, ctx):
         """Check SB bank balance."""
-        pass
+        await self.bot.say('`balance` command not yet implemented.')
 
     @salty.command(name='bet', pass_context=True)
     async def bet(self, ctx):
         """Bet on an SB contender."""
-        pass
+        await self.bot.say('`bet` command not yet implemented.')
+
+    @salty.command(name='cashout', pass_context=True)
+    async def cashout(self, ctx):
+        """Liquidate your SB account assets."""
+        await self.bot.say('`cashout` command not yet implemented.')
 
 
 def setup(bot):
