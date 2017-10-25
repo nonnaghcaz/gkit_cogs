@@ -18,7 +18,9 @@ DESCRIPTION
 
 This repository is a collection of cogs written for [Twentysix's](https://github.com/Twentysix26) [Red-DiscordBot](https://github.com/Cog-Creators/Red-DiscordBot).  
 
-Most of the cogs have no real value and are just for fun.  
+> Red is a fully modular bot – meaning all features and commands can be enabled/disabled to your liking, making it completely customizable.
+
+Most of my cogs have no real value and are just for fun.  
 
 ---
 
