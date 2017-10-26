@@ -28,7 +28,7 @@ COGS
 ----
 
   - __[ALPHA]__ _BASTA_
-    - 
+    - And so the lord said to me, BASTA!
     - Usage: `[p]basta [command {options}]`
     - Commands:
       - `user`: `[p]basta user {@user}`
