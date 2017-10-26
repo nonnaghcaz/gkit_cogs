@@ -26,32 +26,55 @@ Most of my cogs have no real value and are just for fun.
 
   - **[ALPHA]** _**BASTA**_
     - And so the lord said to me, **BASTA!**
-    - Usage: `[p]basta [command {options}]`
     - Commands:
-      - _**user**_: `[p]basta user {@user}`
-      - _**satan**_: `[p]basta satan`
-      - _**santa**_: `[p]basta santa`
+
+      | Name | Usage | Description |
+      | ---- | ----- | ----------- |
+      | _santa_ | `[p]basta santa` | |
+      | _satan_ | `[p]basta satan` | |
+      | _user_ | `[p]basta user {@user}` | |
+
   - _**FlavorSavor**_
     - Savor that Fieri flavor!
-    - Usage: `[p]savor`
+    - Commands:
+
+      | Name | Usage | Description |
+      | ---- | ----- | ----------- |
+      | _bitter_ | `[p]savor bitter` | |
+      | _gusto_ | `[p]savor gusto` | |
+      | _juicy_ | `[p]savor juicy` | |
+      | _salty_ | `[p]savor salty` | |
+      | _sour_ | `[p]savor sour` | |
+      | _spicy_ | `[p]savor spicy` | |
+      | _sweet_ | `[p]savor sweet` | |
+      | _umami_ | `[p]savor umami` | |
+
   - **[COMING SOON]** _**PapaBless**_
     - Vape Naysh yall `\//\`
-    - Usage: `UNAVAILABLE`
-  - **[NEW COMMANDS]** _**PEP20**_
+    - Commands: `UNAVAILABLE`
+
+  - _**PEP20**_
     - The word of the BDFL is law.
-    - Usage: `[p]bdfl [command {options}]`
     - Commands:
-      - **[NEW]** _**preach**_: `[p]bdfl preach`
-      - **[NEW]** _**pontificate**_: `[p]bdfl pontificate`
-      - _**assimilate**_: `[p]bdfl assimilate`
+
+      | Name | Usage | Description |
+      | ---- | ----- | ----------- |
+      | _assimilate_ | `[p]bdfl assimilate` | |
+      | **[NEW]** _pontificate_ | `[p]bdfl pontificate` | |
+      | **[NEW]** _preach_ | `[p]bdfl preach` | |
+
   - **[COMING SOON]** _**SaltyDebt**_
     - Feed your Salty Bet gambling addiction.
-    - Usage: `UNAVAILABLE`
+    - Commands: `UNAVAILABLE`
+
   - _**WannaCookie**_
-    - What, do you want a cookie?
-    - Usage: `[p]wanna [command {options}]`
+    - What, do you want a... ?
     - Commands:
-      - _**cookie**_: `[p]wanna cookie {@user}`
+
+      | Name | Usage | Description |
+      | ---- | ----- | ----------- |
+      | _cookie_ | `[p]wanna cookie {@user}` | |
+      | **[NEW]** _goldstar_ | `[p]wanna goldstar {@user}` | |
 
 ---
 
@@ -61,6 +84,7 @@ These cogs are in _**very**_ early development, but can be downloaded through Re
 
   - `[p]cog repo add gkit_cogs https://github.com/gannon93/gkit_cogs`
   - `[p]cog install gkit_cogs <cog>`
+    - `basta`, `flavorsavor`, `pep20`, `wannacookie`
 
 ---
 
