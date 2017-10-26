@@ -84,6 +84,7 @@ These cogs are in _**very**_ early development, but can be downloaded through Re
 
   - `[p]cog repo add gkit_cogs https://github.com/gannon93/gkit_cogs`
   - `[p]cog install gkit_cogs <cog>`
+    - `basta`, `flavorsavor`, `pep20`, `wannacookie`
 
 ---
 
