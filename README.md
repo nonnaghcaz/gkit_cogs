@@ -24,7 +24,7 @@ Most of my cogs have no real value and are just for fun.
 
 ## COGS
 
-  - **<span style="color:blue">[ALPHA]</span>** _**BASTA**_
+  - **[ALPHA]** _**BASTA**_
     - And so the lord said to me, **BASTA!**
     - Usage: `[p]basta [command {options}]`
     - Commands:
@@ -34,17 +34,17 @@ Most of my cogs have no real value and are just for fun.
   - _**FlavorSavor**_
     - Savor that Fieri flavor!
     - Usage: `[p]savor`
-  - **<span style="color:orange">[COMING SOON]</span>** _**PapaBless**_
+  - **[COMING SOON]** _**PapaBless**_
     - Vape Naysh yall `\//\`
     - Usage: `UNAVAILABLE`
-  - **<span style="color:gold">[NEW COMMANDS]</span>** _**PEP20**_
+  - **[NEW COMMANDS]** _**PEP20**_
     - The word of the BDFL is law.
     - Usage: `[p]bdfl [command {options}]`
     - Commands:
-      - **<span style="color:gold">[NEW]</span>** _preach_: `[p]bdfl preach`
-      - **<span style="color:gold">[NEW]</span>** _pontificate_: `[p]bdfl pontificate`
+      - **[NEW]** _preach_: `[p]bdfl preach`
+      - **[NEW]** _pontificate_: `[p]bdfl pontificate`
       - _assimilate_: `[p]bdfl assimilate`
-  - **<span style="color:orange">[COMING SOON]</span>** _**SaltyDebt**_
+  - **[COMING SOON]** _**SaltyDebt**_
     - Feed your Salty Bet gambling addiction.
     - Usage: `UNAVAILABLE`
   - _**WannaCookie**_
@@ -57,7 +57,7 @@ Most of my cogs have no real value and are just for fun.
 
 ## INSTALLATION
 
-These cogs are in _**very**_ early development, but can be downloaded through <span style="color:red">Red's</span> distributor and [Cogs.Red](https://cogs.red/cogs/gannon93/gkit_cogs/):  
+These cogs are in _**very**_ early development, but can be downloaded through Red's distributor and [Cogs.Red](https://cogs.red/cogs/gannon93/gkit_cogs/):  
 
   - `[p]cog repo add gkit_cogs https://github.com/gannon93/gkit_cogs`
   - `[p]cog install gkit_cogs <cog>`
