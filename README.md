@@ -26,42 +26,46 @@ Most of my cogs have no real value and are just for fun.
 
   - **[ALPHA]** _**BASTA**_
     - And so the lord said to me, **BASTA!**
-    - Usage: `[p]basta [command {options}]`
-    - Commands:
-      - _**user**_: `[p]basta user {@user}`
-      - _**satan**_: `[p]basta satan`
-      - _**santa**_: `[p]basta santa`
+    - Commands:  
+      | Name | Usage | Description |
+      |------|-------|-------------|
+      | _**user**_ | `[p]basta user {@user}` | |
+      | _**satan**_ | `[p]basta satan` | |
+      | _**santa**_ | `[p]basta santa` | |
   - _**FlavorSavor**_
     - Savor that Fieri flavor!
-    - Usage: `[p]savor [command {options}]`
-    - Commands:
-      - _**gusto**_: `[p]savor gusto`
-      - _**juicy**_: `[p]savor juicy`
-      - _**spicy**_: `[p]savor spicy`
-      - _**sweet**_: `[p]savor sweet`
-      - _**sour**_: `[p]savor sour`
-      - _**salty**_: `[p]savor salty`
-      - _**bitter**_: `[p]savor bitter`
-      - _**umami**_: `[p]savor umami`
+    - Commands:  
+      | Name | Usage | Description |
+      |------|-------|-------------|
+      | _gusto_ | `[p]savor gusto` | |
+      | _juicy_ | `[p]savor juicy` | |
+      | _spicy_ | `[p]savor spicy` | |
+      | _sweet_ | `[p]savor sweet` | |
+      | _sour_ | `[p]savor sour` | |
+      | _salty_ | `[p]savor salty` | |
+      | _bitter_ | `[p]savor bitter` | |
+      | _umami_ | `[p]savor umami` | |
   - **[COMING SOON]** _**PapaBless**_
     - Vape Naysh yall `\//\`
-    - Usage: `UNAVAILABLE`
-  - **[NEW COMMANDS]** _**PEP20**_
+    - Commands: `UNAVAILABLE`
+  - _**PEP20**_
     - The word of the BDFL is law.
-    - Usage: `[p]bdfl [command {options}]`
-    - Commands:
-      - **[NEW]** _**preach**_: `[p]bdfl preach`
-      - **[NEW]** _**pontificate**_: `[p]bdfl pontificate`
-      - _**assimilate**_: `[p]bdfl assimilate`
+    - Commands:  
+      | Name | Usage | Description |
+      |------|-------|-------------|
+      | _assimilate_ | `[p]bdfl assimilate` | |
+      | **[NEW]** _pontificate_ | `[p]bdfl pontificate` | |
+      | **[NEW]** _preach_ | `[p]bdfl preach` | |
   - **[COMING SOON]** _**SaltyDebt**_
     - Feed your Salty Bet gambling addiction.
-    - Usage: `UNAVAILABLE`
+    - Commands: `UNAVAILABLE`
   - _**WannaCookie**_
     - What, do you want a... ?
-    - Usage: `[p]wanna [command {options}]`
-    - Commands:
-      - _**cookie**_: `[p]wanna cookie {@user}`
-      - _**goldstar**_: `[p]wanna goldstar {@user}`
+    - Commands:  
+      | Name | Usage | Description |
+      |------|-------|-------------|
+      | _cookie_ | `[p]wanna cookie {@user}` | |
+      | **[NEW]** _goldstar_ | `[p]wanna goldstar {@user}` | |
 
 ---
 
