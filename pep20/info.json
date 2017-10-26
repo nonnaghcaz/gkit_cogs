@@ -5,5 +5,5 @@
     "DISABLED" : false,
     "NAME" : "BDFL",
     "TAGS" : ["zen", "pep20", "law"],
-    "INSTALL_MSG" : "Usage: `[p]assimilate`"
+    "INSTALL_MSG" : "Usage: `[p]help bdfl`"
 }

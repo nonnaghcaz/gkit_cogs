@@ -1,6 +1,5 @@
 """Displays the word of the BDFL."""
 
-import discord
 from discord.ext import commands
 
 
@@ -34,11 +33,32 @@ class BDFL:
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(pass_context=True)
-    async def assimilate(self, context):
+    @commands.group(name='bdfl', pass_context=True)
+    async def _bdfl(self, context):
+        if context.invoked_subcommand is None:
+            await self.bot.say("Type `[p]help bdfl` for info.")
+
+    @_bdfl.command(name='preach', pass_context=True)
+    async def preach(self, context):
         """Display the word of the BDFL."""
         await self.bot.say(
-            'Listen close my child, ' + context.message.author.mention + '\n\n' + ZEN_OF_PYTHON)
+            'Listen close my child, ' +
+            context.message.author.mention + '\n\n' +
+            ZEN_OF_PYTHON)
+
+    @_bdfl.command(name='pontificate', pass_context=True)
+    async def pontificate(self, context):
+        """Display the word of the BDFL with some gusto."""
+        await self.bot.say((
+            'Hark, and be delivered, ' +
+            context.message.author.mention + '\n\n' +
+            ZEN_OF_PYTHON).upper())
+
+    @_bdfl.command(name='assimilate', pass_context=True)
+    async def assimilate(self, context):
+        """Display your allegiance to our BDFL overlord."""
+        await self.bot.say(
+            'Praise be, our Benevolent Dictator For Life, GUIDO VAN ROSSUM!')
 
 
 def setup(bot):
