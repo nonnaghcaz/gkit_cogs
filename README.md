@@ -99,7 +99,7 @@ These cogs are in _**very**_ early development, but can be downloaded through Re
 Found a bug or thinking of a way to add some extra spice to my cogs?  
 Boy oh boy, you better add an issue and a PR if you can fix the bug or add the enhancement yourself.  
 
-Follow these 5 easy steps for a successful contribution (by @Redjumpman):
+Follow these 5 easy steps for a successful contribution (by [@Redjumpman](https://github.com/Redjumpman)):
 
   1. Fork it!
   2. Develop your feature branch
@@ -117,7 +117,7 @@ The project is now licensed under [MIT](https://github.com/gannon93/gkit_cogs/bl
 
 ## CREDITS and THANKS
 
-  - [Twentysix](https://github.com/Twentysix26), for making a great Python subcommunity and finally providing me with a platform to exercise my Python/Gaming/Internet passion. 
-  - [Redjumpman](https://github.com/Redjumpman) and [irdumb](https://github.com/irdumbs), for unknowingly being my Cog Creator senseis. 
-  - [Orels1](https://github.com/orels1), for creating the swanky Red-Portal cog registry at [Cogs.Red](http://cogs.red).
+  - [@Twentysix26](https://github.com/Twentysix26), for making a great Python subcommunity and finally providing me with a platform to exercise my Python/Gaming/Internet passion. 
+  - [@Redjumpman](https://github.com/Redjumpman) and [@irdumbs](https://github.com/irdumbs), for unknowingly being my Cog Creator senseis. 
+  - [@Orels1](https://github.com/orels1), for creating the swanky Red-Portal cog registry at [Cogs.Red](http://cogs.red).
   - The Red community, for constantly coming up with bigger and better ideas for cogs.
