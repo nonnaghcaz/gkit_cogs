@@ -53,7 +53,7 @@ Most of my cogs have no real value and are just for fun.
 
   - **[COMING SOON]** _**PapaBless**_
     - Vape Naysh yall `\//\`
-    - Usage: `UNAVILABLE`
+    - Usage: `UNAVAILABLE`
     - Commands: `UNAVAILABLE`
 
   - **[UPDATED]** _**PEP20**_
