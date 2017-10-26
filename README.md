@@ -28,9 +28,9 @@ Most of my cogs have no real value and are just for fun.
     - And so the lord said to me, **BASTA!**
     - Usage: `[p]basta [command {options}]`
     - Commands:
-      - _user_: `[p]basta user {@user}`
-      - _satan_: `[p]basta satan`
-      - _santa_: `[p]basta santa`
+      - _**user**_: `[p]basta user {@user}`
+      - _**satan**_: `[p]basta satan`
+      - _**santa**_: `[p]basta santa`
   - _**FlavorSavor**_
     - Savor that Fieri flavor!
     - Usage: `[p]savor`
@@ -41,9 +41,9 @@ Most of my cogs have no real value and are just for fun.
     - The word of the BDFL is law.
     - Usage: `[p]bdfl [command {options}]`
     - Commands:
-      - **[NEW]** _preach_: `[p]bdfl preach`
-      - **[NEW]** _pontificate_: `[p]bdfl pontificate`
-      - _assimilate_: `[p]bdfl assimilate`
+      - **[NEW]** _**preach**_: `[p]bdfl preach`
+      - **[NEW]** _**pontificate**_: `[p]bdfl pontificate`
+      - _**assimilate**_: `[p]bdfl assimilate`
   - **[COMING SOON]** _**SaltyDebt**_
     - Feed your Salty Bet gambling addiction.
     - Usage: `UNAVAILABLE`
@@ -51,7 +51,7 @@ Most of my cogs have no real value and are just for fun.
     - What, do you want a cookie?
     - Usage: `[p]wanna [command {options}]`
     - Commands:
-      - _cookie_: `[p]wanna cookie {@user}`
+      - _**cookie**_: `[p]wanna cookie {@user}`
 
 ---
 
