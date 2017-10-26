@@ -35,7 +35,14 @@ Most of my cogs have no real value and are just for fun.
     - Savor that Fieri flavor!
     - Usage: `[p]savor [command {options}]`
     - Commands:
-      - _**blast**_: `[p]savor blast`
+      - _**gusto**_: `[p]savor gusto`
+      - _**juicy**_: `[p]savor juicy`
+      - _**spicy**_: `[p]savor spicy`
+      - _**sweet**_: `[p]savor sweet`
+      - _**sour**_: `[p]savor sour`
+      - _**salty**_: `[p]savor salty`
+      - _**bitter**_: `[p]savor bitter`
+      - _**umami**_: `[p]savor umami`
   - **[COMING SOON]** _**PapaBless**_
     - Vape Naysh yall `\//\`
     - Usage: `UNAVAILABLE`
