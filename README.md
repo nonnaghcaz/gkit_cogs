@@ -28,7 +28,7 @@ Most of my cogs have no real value and are just for fun.
     - And so the lord said to me, **BASTA!**
     - Commands:  
       | Name | Usage | Description |
-      |------|-------|-------------|
+      | ---- | ----- | ----------- |
       | _**user**_ | `[p]basta user {@user}` | |
       | _**satan**_ | `[p]basta satan` | |
       | _**santa**_ | `[p]basta santa` | |
@@ -36,7 +36,7 @@ Most of my cogs have no real value and are just for fun.
     - Savor that Fieri flavor!
     - Commands:  
       | Name | Usage | Description |
-      |------|-------|-------------|
+      | ---- | ----- | ----------- |
       | _gusto_ | `[p]savor gusto` | |
       | _juicy_ | `[p]savor juicy` | |
       | _spicy_ | `[p]savor spicy` | |
@@ -52,7 +52,7 @@ Most of my cogs have no real value and are just for fun.
     - The word of the BDFL is law.
     - Commands:  
       | Name | Usage | Description |
-      |------|-------|-------------|
+      | ---- | ----- | ----------- |
       | _assimilate_ | `[p]bdfl assimilate` | |
       | **[NEW]** _pontificate_ | `[p]bdfl pontificate` | |
       | **[NEW]** _preach_ | `[p]bdfl preach` | |
@@ -63,7 +63,7 @@ Most of my cogs have no real value and are just for fun.
     - What, do you want a... ?
     - Commands:  
       | Name | Usage | Description |
-      |------|-------|-------------|
+      | ---- | ----- | ----------- |
       | _cookie_ | `[p]wanna cookie {@user}` | |
       | **[NEW]** _goldstar_ | `[p]wanna goldstar {@user}` | |
 
