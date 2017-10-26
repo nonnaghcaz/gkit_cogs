@@ -24,69 +24,74 @@ Most of my cogs have no real value and are just for fun.
 
 ## COGS
 
-  - **[ALPHA]** _**BASTA**_
-    - And so the lord said to me, **BASTA!**
-    - Usage: `[p]basta [command {options}]`
-    - Commands:
+**[ALPHA]** [_**BASTA**_](https://github.com/gannon93/gkit_cogs/wiki/BASTA!)
+  - And so the lord said to me, **BASTA!**
+  - Usage: `[p]basta [command {options}]`
+  - Commands:
 
-      | Name | Usage | Description |
-      | ---- | ----- | ----------- |
-      | _santa_ | `[p]basta santa` | |
-      | _satan_ | `[p]basta satan` | |
-      | _user_ | `[p]basta user {@user}` | |
+    | Name | Usage | Description |
+    | ---- | ----- | ----------- |
+    | _santa_ | `[p]basta santa` | |
+    | _satan_ | `[p]basta satan` | |
+    | _user_ | `[p]basta user {@user}` | |
 
-  - **[IN PROGRESS]** _**FlavorSavor**_
-    - Savor that Fieri flavor!
-    - Usage: `[p]savor [command {options}]`
-    - Commands:
 
-      | Name | Usage | Description |
-      | ---- | ----- | ----------- |
-      | **[WIP]** _bitter_ | `[p]savor bitter` | |
-      | **[WIP]** _gusto_ | `[p]savor gusto` | |
-      | **[WIP]** _juicy_ | `[p]savor juicy` | |
-      | **[WIP]** _salty_ | `[p]savor salty` | |
-      | **[WIP]** _sour_ | `[p]savor sour` | |
-      | **[WIP]** _spicy_ | `[p]savor spicy` | |
-      | **[WIP]** _sweet_ | `[p]savor sweet` | |
-      | **[WIP]** _umami_ | `[p]savor umami` | |
+**[IN PROGRESS]** [_**FlavorSavor**_](https://github.com/gannon93/gkit_cogs/wiki/FlavorSavor)
+  - Savor that Fieri flavor!
+  - Usage: `[p]savor [command {options}]`
+  - Commands:
 
-  - **[COMING SOON]** _**PapaBless**_
-    - Vape Naysh yall `\//\`
-    - Usage: `UNAVAILABLE`
-    - Commands: `UNAVAILABLE`
+    | Name | Usage | Description |
+    | ---- | ----- | ----------- |
+    | **[WIP]** _bitter_ | `[p]savor bitter` | |
+    | **[WIP]** _gusto_ | `[p]savor gusto` | |
+    | **[WIP]** _juicy_ | `[p]savor juicy` | |
+    | **[WIP]** _salty_ | `[p]savor salty` | |
+    | **[WIP]** _sour_ | `[p]savor sour` | |
+    | **[WIP]** _spicy_ | `[p]savor spicy` | |
+    | **[WIP]** _sweet_ | `[p]savor sweet` | |
+    | **[WIP]** _umami_ | `[p]savor umami` | |
 
-  - **[UPDATED]** _**PEP20**_
-    - The word of the BDFL is law.
-    - Usage: `[p]bdfl [command {options}]`
-    - Commands:
 
-      | Name | Usage | Description |
-      | ---- | ----- | ----------- |
-      | _assimilate_ | `[p]bdfl assimilate` | |
-      | **[NEW]** _pontificate_ | `[p]bdfl pontificate` | |
-      | **[NEW]** _preach_ | `[p]bdfl preach` | |
+**[COMING SOON]** [_**PapaBless**_](https://github.com/gannon93/gkit_cogs/wiki/PapaBless)
+  - Vape Naysh yall `\//\`
+  - Usage: `UNAVAILABLE`
+  - Commands: `UNAVAILABLE`
 
-  - **[COMING SOON]** _**SaltyDebt**_
-    - Feed your Salty Bet gambling addiction.
-    - Usage: `[p]salty [command {options}]`
-    - Commands:
 
-      | Name | Usage | Description |
-      | ---- | ----- | ----------- |
-      | **[WIP]** _balance_ | `[p]salty balance` | |
-      | **[WIP]** _bet_ | `[p]salty bet` | |
-      | **[WIP]** _cashout_ | `[p]salty cachout` | |
+**[UPDATED]** [_**PEP20**_](https://github.com/gannon93/gkit_cogs/wiki/PEP20)
+  - The word of the BDFL is law.
+  - Usage: `[p]bdfl [command {options}]`
+  - Commands:
 
-  - **[UPDATED]** _**WannaCookie**_
-    - What, do you want a... ?
-    - Usage: `[p]wanna [command {options}]`
-    - Commands:
+    | Name | Usage | Description |
+    | ---- | ----- | ----------- |
+    | _assimilate_ | `[p]bdfl assimilate` | |
+    | **[NEW]** _pontificate_ | `[p]bdfl pontificate` | |
+    | **[NEW]** _preach_ | `[p]bdfl preach` | |
 
-      | Name | Usage | Description |
-      | ---- | ----- | ----------- |
-      | _cookie_ | `[p]wanna cookie {@user}` | |
-      | **[NEW]** _goldstar_ | `[p]wanna goldstar {@user}` | |
+
+**[COMING SOON]** [_**SaltyDebt**_](https://github.com/gannon93/gkit_cogs/wiki/SaltyDebt)
+  - Feed your Salty Bet gambling addiction.
+  - Usage: `[p]salty [command {options}]`
+  - Commands:
+
+    | Name | Usage | Description |
+    | ---- | ----- | ----------- |
+    | **[WIP]** _balance_ | `[p]salty balance` | |
+    | **[WIP]** _bet_ | `[p]salty bet` | |
+    | **[WIP]** _cashout_ | `[p]salty cachout` | |
+
+
+**[UPDATED]** [_**WannaCookie**_](https://github.com/gannon93/gkit_cogs/wiki/WannaCookie)
+  - What, do you want a... ?
+  - Usage: `[p]wanna [command {options}]`
+  - Commands:
+
+    | Name | Usage | Description |
+    | ---- | ----- | ----------- |
+    | _cookie_ | `[p]wanna cookie {@user}` | |
+    | **[NEW]** _goldstar_ | `[p]wanna goldstar {@user}` | |
 
 ---
 
