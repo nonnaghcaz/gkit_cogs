@@ -122,7 +122,7 @@ Follow these 5 easy steps for a successful contribution (by [@Redjumpman](https:
 
 ## LICENSE
 
-The project is now licensed under [MIT](https://github.com/gannon93/gkit_cogs/blob/master/LICENSE).
+The project is licensed under [MIT](https://github.com/gannon93/gkit_cogs/blob/master/LICENSE). Feel free to alter this project anyway you see fit, as long as I am credited for the original work.
 
 ---
 
