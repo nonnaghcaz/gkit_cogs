@@ -2,8 +2,7 @@
 [![Red Bot](https://img.shields.io/badge/Discord-Red%20Bot-red.svg)](https://github.com/Twentysix26/Red-DiscordBot)
 [![Cogs.Red](https://img.shields.io/badge/Cogs.Red-gkit__cogs-red.svg)](https://cogs.red/cogs/gannon93/gkit_cogs/)
 
-Gannon Toolkit Library - Cogs (gkit_cogs)
-=========================================
+# Gannon Toolkit Library - Cogs (gkit_cogs)
 
 ---
 
@@ -13,8 +12,7 @@ Gannon Toolkit Library - Cogs (gkit_cogs)
 
 ---
 
-DESCRIPTION
------------
+## DESCRIPTION
 
 This repository is a collection of cogs written for [Twentysix's](https://github.com/Twentysix26) [Red-DiscordBot](https://github.com/Cog-Creators/Red-DiscordBot).  
 
@@ -24,67 +22,62 @@ Most of my cogs have no real value and are just for fun.
 
 ---
 
-COGS
-----
+## COGS
 
-  - __[ALPHA]__ _BASTA_
-    - And so the lord said to me, BASTA!
+  - **<span style="color:blue">[ALPHA]</span>** _**BASTA**_
+    - And so the lord said to me, **BASTA!**
     - Usage: `[p]basta [command {options}]`
     - Commands:
-      - `user`: `[p]basta user {@user}`
-      - `satan`: `[p]basta satan`
-      - `santa`: `[p]basta santa`
-  - _FlavorSavor_
+      - _user_: `[p]basta user {@user}`
+      - _satan_: `[p]basta satan`
+      - _santa_: `[p]basta santa`
+  - _**FlavorSavor**_
     - Savor that Fieri flavor!
     - Usage: `[p]savor`
-  - __[COMING SOON]__ _PapaBless_
+  - **<span style="color:orange">[COMING SOON]</span>** _**PapaBless**_
     - Vape Naysh yall `\//\`
     - Usage: `UNAVAILABLE`
-  - __[NEW COMMANDS]__ _PEP20_
+  - **<span style="color:gold">[NEW COMMANDS]</span>** _**PEP20**_
     - The word of the BDFL is law.
     - Usage: `[p]bdfl [command {options}]`
     - Commands:
-      - __[NEW]__ `preach`: `[p]bdfl preach`
-      - __[NEW]__ `pontificate`: `[p]bdfl pontificate`
-      - `assimilate`: `[p]bdfl assimilate`
-  - __[COMING SOON]__ _SaltyDebt_
+      - **<span style="color:gold">[NEW]</span>** _preach_: `[p]bdfl preach`
+      - **<span style="color:gold">[NEW]</span>** _pontificate_: `[p]bdfl pontificate`
+      - _assimilate_: `[p]bdfl assimilate`
+  - **<span style="color:orange">[COMING SOON]</span>** _**SaltyDebt**_
     - Feed your Salty Bet gambling addiction.
     - Usage: `UNAVAILABLE`
-  - _WannaCookie_
+  - _**WannaCookie**_
     - What, do you want a cookie?
     - Usage: `[p]wanna [command {options}]`
     - Commands:
-      - `cookie`: `[p]wanna cookie {@user}`
+      - _cookie_: `[p]wanna cookie {@user}`
 
 ---
 
-INSTALLATION
-------------
+## INSTALLATION
 
-These cogs are in __very__ early development, but can be downloaded through Red's distributor and [Cogs.Red](https://cogs.red/cogs/gannon93/gkit_cogs/):  
+These cogs are in _**very**_ early development, but can be downloaded through <span style="color:red">Red's</span> distributor and [Cogs.Red](https://cogs.red/cogs/gannon93/gkit_cogs/):  
 
   - `[p]cog repo add gkit_cogs https://github.com/gannon93/gkit_cogs`
   - `[p]cog install gkit_cogs <cog>`
 
 ---
 
-CONTRIBUTION
-------------
+## CONTRIBUTION
 
 Found a bug or thinking of a way to add some extra spice to my cogs? 
 Boy oh boy, you better add an issue and a PR if you can fix the bug or add the enhancement yourself.
 
 ---
 
-LICENSE
--------
+## LICENSE
 
 The project is now licensed under [MIT](https://github.com/gannon93/gkit_cogs/blob/master/LICENSE).
 
 ---
 
-CREDITS and THANKS
-------------------
+## CREDITS and THANKS
 
   - [Twentysix](https://github.com/Twentysix26), for making a great Python subcommunity and finally providing me with a platform to exercise my Python/Gaming/Internet passion. 
   - [Redjumpman](https://github.com/Redjumpman) and [irdumb](https://github.com/irdumbs), for unknowingly being my Cog Creator senseis. 
