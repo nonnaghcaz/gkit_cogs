@@ -17,11 +17,19 @@ class FlavorSavor:
         self.bot = bot
         self.quotes = fileIO("data/flavorsavor/quotes.json", "load")
 
-    @commands.command(pass_context=True)
-    async def savor(self, context):
+    @commands.group(name='savor', pass_context=True)
+    async def _savor(self, context):
         """Displays a random Guy Fieri quote."""
+        if context.invoked_subcommand is None:
+            await self.bot.say(
+                context.message.author.mention + ' ' + randchoice(self.quotes))
+
+    @_savor.command(name='', pass_context=True)
+    async def blast(self, context):
+        """Displays a random Guy Fieri quote with some gusto."""
         await self.bot.say(
-            context.message.author.mention + ' ' + randchoice(self.quotes))
+            context.message.author.mention + ' ' +
+            randchoice(self.quotes).upper())
 
 
 def setup(bot):
