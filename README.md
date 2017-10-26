@@ -71,6 +71,7 @@ Most of my cogs have no real value and are just for fun.
     - Feed your Salty Bet gambling addiction.
     - Usage: `[p]salty [command {options}]`
     - Commands:
+    
       | Name | Usage | Description |
       | ---- | ----- | ----------- |
       | **[WIP]** _balance_ | `[p]savor balance` | |
