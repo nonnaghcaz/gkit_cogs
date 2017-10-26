@@ -90,8 +90,16 @@ These cogs are in _**very**_ early development, but can be downloaded through Re
 
 ## CONTRIBUTION
 
-Found a bug or thinking of a way to add some extra spice to my cogs? 
-Boy oh boy, you better add an issue and a PR if you can fix the bug or add the enhancement yourself.
+Found a bug or thinking of a way to add some extra spice to my cogs?  
+Boy oh boy, you better add an issue and a PR if you can fix the bug or add the enhancement yourself.  
+
+Follow these 5 easy steps for a successful contribution (by @Redjumpman):
+
+  1. Fork it!
+  2. Develop your feature branch
+  3. Commit your changes
+  4. Push to the main branch
+  5. Submit a pull request
 
 ---
 

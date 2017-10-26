@@ -1,3 +1,12 @@
 # Contributing
 
-When planning to add an enhancement or fixing a bug in my cogs, please first open an issue with the appropriate tag ([REQUEST], [ENHANCEMENT], [BUG-FIX]). Once completed, add a PR and the high court will review it.
+Found a bug or thinking of a way to add some extra spice to my cogs?  
+Boy oh boy, you better add an issue, and feel free to try and fix the bug or add the enhancement yourself with a pull request.
+
+Follow these 5 easy steps for a successful contribution (by @Redjumpman):
+
+  1. Fork it!
+  2. Develop your feature branch
+  3. Commit your changes
+  4. Push to the main branch
+  5. Submit a pull request
