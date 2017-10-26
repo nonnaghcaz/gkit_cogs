@@ -26,6 +26,7 @@ Most of my cogs have no real value and are just for fun.
 
   - **[ALPHA]** _**BASTA**_
     - And so the lord said to me, **BASTA!**
+    - Usage: `[p]basta [command {options}]`
     - Commands:
 
       | Name | Usage | Description |
@@ -36,6 +37,7 @@ Most of my cogs have no real value and are just for fun.
 
   - _**FlavorSavor**_
     - Savor that Fieri flavor!
+    - Usage: `[p]savor [command {options}]`
     - Commands:
 
       | Name | Usage | Description |
@@ -51,10 +53,12 @@ Most of my cogs have no real value and are just for fun.
 
   - **[COMING SOON]** _**PapaBless**_
     - Vape Naysh yall `\//\`
+    - Usage: `UNAVILABLE`
     - Commands: `UNAVAILABLE`
 
   - _**PEP20**_
     - The word of the BDFL is law.
+    - Usage: `[p]bdfl [command {options}]`
     - Commands:
 
       | Name | Usage | Description |
@@ -65,10 +69,12 @@ Most of my cogs have no real value and are just for fun.
 
   - **[COMING SOON]** _**SaltyDebt**_
     - Feed your Salty Bet gambling addiction.
+    - Usage: `[p]salty [command {options}]`
     - Commands: `UNAVAILABLE`
 
   - _**WannaCookie**_
     - What, do you want a... ?
+    - Usage: `[p]wanna [command {options}]`
     - Commands:
 
       | Name | Usage | Description |
