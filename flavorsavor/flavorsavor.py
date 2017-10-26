@@ -5,7 +5,6 @@ was __heavily__ inspired by Twentysix26's insult cog:
     https://github.com/Twentysix26/26-Cogs/tree/master/insult
 """
 
-import discord
 from discord.ext import commands
 from .utils.dataIO import fileIO
 from random import choice as randchoice
