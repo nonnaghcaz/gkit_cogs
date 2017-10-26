@@ -30,9 +30,9 @@ Most of my cogs have no real value and are just for fun.
 
       | Name | Usage | Description |
       | ---- | ----- | ----------- |
-      | _**user**_ | `[p]basta user {@user}` | |
-      | _**satan**_ | `[p]basta satan` | |
-      | _**santa**_ | `[p]basta santa` | |
+      | _santa_ | `[p]basta santa` | |
+      | _satan_ | `[p]basta satan` | |
+      | _user_ | `[p]basta user {@user}` | |
 
   - _**FlavorSavor**_
     - Savor that Fieri flavor!
@@ -40,13 +40,13 @@ Most of my cogs have no real value and are just for fun.
 
       | Name | Usage | Description |
       | ---- | ----- | ----------- |
+      | _bitter_ | `[p]savor bitter` | |
       | _gusto_ | `[p]savor gusto` | |
       | _juicy_ | `[p]savor juicy` | |
+      | _salty_ | `[p]savor salty` | |
+      | _sour_ | `[p]savor sour` | |
       | _spicy_ | `[p]savor spicy` | |
       | _sweet_ | `[p]savor sweet` | |
-      | _sour_ | `[p]savor sour` | |
-      | _salty_ | `[p]savor salty` | |
-      | _bitter_ | `[p]savor bitter` | |
       | _umami_ | `[p]savor umami` | |
 
   - **[COMING SOON]** _**PapaBless**_
