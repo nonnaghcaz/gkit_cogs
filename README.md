@@ -33,7 +33,9 @@ Most of my cogs have no real value and are just for fun.
       - _**santa**_: `[p]basta santa`
   - _**FlavorSavor**_
     - Savor that Fieri flavor!
-    - Usage: `[p]savor`
+    - Usage: `[p]savor [command {options}]`
+    - Commands:
+      - _**blast**_: `[p]savor blast`
   - **[COMING SOON]** _**PapaBless**_
     - Vape Naysh yall `\//\`
     - Usage: `UNAVAILABLE`
@@ -48,10 +50,11 @@ Most of my cogs have no real value and are just for fun.
     - Feed your Salty Bet gambling addiction.
     - Usage: `UNAVAILABLE`
   - _**WannaCookie**_
-    - What, do you want a cookie?
+    - What, do you want a... ?
     - Usage: `[p]wanna [command {options}]`
     - Commands:
       - _**cookie**_: `[p]wanna cookie {@user}`
+      - _**goldstar**_: `[p]wanna goldstar {@user}`
 
 ---
 
