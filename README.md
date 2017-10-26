@@ -25,10 +25,8 @@ Most of my cogs have no real value and are just for fun.
 ## COGS
 
   - **[ALPHA]** _**BASTA**_
-  
     - And so the lord said to me, **BASTA!**
     - Commands:  
-
       | Name | Usage | Description |
       | ---- | ----- | ----------- |
       | _**user**_ | `[p]basta user {@user}` | |
@@ -38,7 +36,6 @@ Most of my cogs have no real value and are just for fun.
   - _**FlavorSavor**_
     - Savor that Fieri flavor!
     - Commands:  
-
       | Name | Usage | Description |
       | ---- | ----- | ----------- |
       | _gusto_ | `[p]savor gusto` | |
@@ -57,7 +54,6 @@ Most of my cogs have no real value and are just for fun.
   - _**PEP20**_
     - The word of the BDFL is law.
     - Commands:  
-
       | Name | Usage | Description |
       | ---- | ----- | ----------- |
       | _assimilate_ | `[p]bdfl assimilate` | |
@@ -71,7 +67,6 @@ Most of my cogs have no real value and are just for fun.
   - _**WannaCookie**_
     - What, do you want a... ?
     - Commands:  
-
       | Name | Usage | Description |
       | ---- | ----- | ----------- |
       | _cookie_ | `[p]wanna cookie {@user}` | |
