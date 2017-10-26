@@ -27,15 +27,26 @@ Most of my cogs have no real value and are just for fun.
 COGS
 ----
 
+  - __[ALPHA]__ _BASTA_
+    - 
+    - Usage: `[p]basta [command {options}]`
+    - Commands:
+      - `user`: `[p]basta user {@user}`
+      - `satan`: `[p]basta satan`
+      - `santa`: `[p]basta santa`
   - _FlavorSavor_
     - Savor that Fieri flavor!
     - Usage: `[p]savor`
   - __[COMING SOON]__ _PapaBless_
     - Vape Naysh yall `\//\`
     - Usage: `UNAVAILABLE`
-  - _PEP20_
+  - __[NEW COMMANDS]__ _PEP20_
     - The word of the BDFL is law.
-    - Usage: `[p]assimilate`
+    - Usage: `[p]bdfl [command {options}]`
+    - Commands:
+      - __[NEW]__ `preach`: `[p]bdfl preach`
+      - __[NEW]__ `pontificate`: `[p]bdfl pontificate`
+      - `assimilate`: `[p]bdfl assimilate`
   - __[COMING SOON]__ _SaltyDebt_
     - Feed your Salty Bet gambling addiction.
     - Usage: `UNAVAILABLE`
