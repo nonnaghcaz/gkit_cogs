@@ -35,28 +35,28 @@ Most of my cogs have no real value and are just for fun.
       | _satan_ | `[p]basta satan` | |
       | _user_ | `[p]basta user {@user}` | |
 
-  - _**FlavorSavor**_
+  - **[IN PROGRESS]** _**FlavorSavor**_
     - Savor that Fieri flavor!
     - Usage: `[p]savor [command {options}]`
     - Commands:
 
       | Name | Usage | Description |
       | ---- | ----- | ----------- |
-      | _bitter_ | `[p]savor bitter` | |
-      | _gusto_ | `[p]savor gusto` | |
-      | _juicy_ | `[p]savor juicy` | |
-      | _salty_ | `[p]savor salty` | |
-      | _sour_ | `[p]savor sour` | |
-      | _spicy_ | `[p]savor spicy` | |
-      | _sweet_ | `[p]savor sweet` | |
-      | _umami_ | `[p]savor umami` | |
+      | **[WIP]** _bitter_ | `[p]savor bitter` | |
+      | **[WIP]** _gusto_ | `[p]savor gusto` | |
+      | **[WIP]** _juicy_ | `[p]savor juicy` | |
+      | **[WIP]** _salty_ | `[p]savor salty` | |
+      | **[WIP]** _sour_ | `[p]savor sour` | |
+      | **[WIP]** _spicy_ | `[p]savor spicy` | |
+      | **[WIP]** _sweet_ | `[p]savor sweet` | |
+      | **[WIP]** _umami_ | `[p]savor umami` | |
 
   - **[COMING SOON]** _**PapaBless**_
     - Vape Naysh yall `\//\`
     - Usage: `UNAVILABLE`
     - Commands: `UNAVAILABLE`
 
-  - _**PEP20**_
+  - **[UPDATED]** _**PEP20**_
     - The word of the BDFL is law.
     - Usage: `[p]bdfl [command {options}]`
     - Commands:
@@ -70,9 +70,14 @@ Most of my cogs have no real value and are just for fun.
   - **[COMING SOON]** _**SaltyDebt**_
     - Feed your Salty Bet gambling addiction.
     - Usage: `[p]salty [command {options}]`
-    - Commands: `UNAVAILABLE`
+    - Commands:
+      | Name | Usage | Description |
+      | ---- | ----- | ----------- |
+      | **[WIP]** _balance_ | `[p]savor balance` | |
+      | **[WIP]** _bet_ | `[p]savor bet` | |
+      | **[WIP]** _cashout_ | `[p]savor cachout` | |
 
-  - _**WannaCookie**_
+  - **[UPDATED]** _**WannaCookie**_
     - What, do you want a... ?
     - Usage: `[p]wanna [command {options}]`
     - Commands:
