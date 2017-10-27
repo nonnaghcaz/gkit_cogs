@@ -43,19 +43,18 @@ Most of my cogs have no real value and are just for fun.
 
       | Sub-Command | Options | Description |
       | ----------- | ------- | ----------- |
-      | **[WIP]** _bitter_ | | |
+      | _bitter_ | | |
       | _gusto_ | | |
-      | **[WIP]** _juicy_ | | |
-      | **[WIP]** _salty_ | | |
-      | **[WIP]** _sour_ | | |
-      | **[WIP]** _spicy_ | | |
-      | **[WIP]** _sweet_ | | |
-      | **[WIP]** _umami_ | | |
+      | _juicy_ | | |
+      | _salty_ | | |
+      | _sour_ | | |
+      | _spicy_ | | |
+      | _sweet_ | | |
+      | _umami_ | | |
 
 
 **[COMING SOON]** [_**PapaBless**_](https://github.com/gannon93/gkit_cogs/wiki/PapaBless)
   - Vape Naysh yall `\//\`
-  - Usage: `UNAVAILABLE`
   - Commands: `UNAVAILABLE`
 
 
@@ -73,26 +72,25 @@ Most of my cogs have no real value and are just for fun.
 
 **[COMING SOON]** [_**SaltyDebt**_](https://github.com/gannon93/gkit_cogs/wiki/SaltyDebt)
   - Feed your Salty Bet gambling addiction.
-  - Usage: `[p]salty [command {options}]`
   - Commands:
     - `salty`
 
-    | Sub-Command | Options | Description |
-    | ----------- | ------- | ----------- |
-    | _balance_ | | |
-    | _bet_ | | |
-    | _cashout_ | | |
+      | Sub-Command | Options | Description |
+      | ----------- | ------- | ----------- |
+      | _balance_ | | |
+      | _bet_ | | |
+      | _cashout_ | | |
 
 
 [_**WannaCookie**_](https://github.com/gannon93/gkit_cogs/wiki/WannaCookie)
   - What, do you want a... ?
-  - Usage: `[p]wanna [command {options}]`
   - Commands:
+    - `wanna`
 
-    | Sub-Command | Options | Description |
-    | ----------- | ------- | ----------- |
-    | _cookie_ | `user` | |
-    | _goldstar_ | `user` | |
+      | Sub-Command | Options | Description |
+      | ----------- | ------- | ----------- |
+      | _cookie_ | `user` | |
+      | _goldstar_ | `user` | |
 
 ---
 
