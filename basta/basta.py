@@ -1,10 +1,13 @@
 """And so the lord said to me, BASTA!
 
-I'm telling you, IT'S ENOUGH! BASTA, SATAN! BASTA
+I'm telling you, IT'S ENOUGH! BASTA, SATAN! BASTA!
 """
 
 import discord
 from discord.ext import commands
+
+
+BASTA_STR = '_**BASTA**_'
 
 
 class BASTA:
@@ -21,17 +24,26 @@ class BASTA:
     async def user(self, context, user: discord.Member=None):
         if user is None:
             user = context.message.author
-        await self.bot.say('BASTA, ' + user.mention + '! BASTA!')
+        await self.bot.say(
+            '{b}, {u}! {b}!'.format(b=BASTA_STR, u=user.mention))
 
     @_basta.command(name='satan', pass_context=True)
     async def satan(self, context):
-        """Display the word of the basta."""
-        await self.bot.say('BASTA, SATAN! BASTA!')
+        """BASTA, SATAN! BASTA!"""
+        await self.bot.say(
+            '{b}, {u}! {b}!'.format(b=BASTA_STR, u='SATAN'))
 
     @_basta.command(name='santa', pass_context=True)
     async def santa(self, context):
-        """Display the word of the basta with some gusto."""
-        await self.bot.say('BASTA, SANTA! BASTA!')
+        """BASTA, SANTA! BASTA!"""
+        await self.bot.say(
+            '{b}, {u}! {b}!'.format(b=BASTA_STR, u='SANTA'))
+
+    @_basta.command(name='stan', pass_context=True)
+    async def stan(self, context):
+        """BASTA, STAN! BASTA!"""
+        await self.bot.say(
+            '{b}, {u}! {b}!'.format(b=BASTA_STR, u='STAN'))
 
 
 def setup(bot):
