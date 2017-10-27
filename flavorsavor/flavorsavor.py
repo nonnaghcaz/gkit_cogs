@@ -40,7 +40,7 @@ class FlavorSavor:
 
     @_savor.command(name='juicy', pass_context=True)
     async def juicy(self, context):
-        """`juicy` command not yet implemented."""
+        """`juicy` sub-command not yet implemented."""
         await self.bot.say(BASE_STRING.format(
             u=context.message.author.mention,
             q=randchoice(self.quotes),
@@ -49,38 +49,42 @@ class FlavorSavor:
 
     @_savor.command(name='spicy', pass_context=True)
     async def spicy(self, context):
-        """`spicy` command not yet implemented."""
+        """`spicy` sub-command not yet implemented."""
         await self.bot.say(BASE_STRING.format(
             u=context.message.author.mention,
             q=randchoice(self.quotes),
             fl='_**',
             fr='**_'))
 
-    @_savor.command(name='sweet', pass_context=True)
+    @commands.group(name='taste', pass_context=True)
+    async def _taste(self, context):
+        """`taste` command not yet implemented."""
+        await self.bot.say('`taste` command not yet implemented.')
+
+    @_taste.command(name='sweet', pass_context=True)
     async def sweet(self, context):
-        """`sweet` command not yet implemented."""
-        await self.bot.say('`sweet` command not yet implemented.')
+        """`sweet` sub-command not yet implemented."""
+        await self.bot.say('`sweet` sub-command not yet implemented.')
 
-    @_savor.command(name='sour', pass_context=True)
+    @_taste.command(name='sour', pass_context=True)
     async def sour(self, context):
-        """`sour` command not yet implemented."""
-        await self.bot.say('`sour` command not yet implemented.')
+        """`sour` sub-command not yet implemented."""
+        await self.bot.say('`sour` sub-command not yet implemented.')
 
-    @_savor.command(name='bitter', pass_context=True)
+    @_taste.command(name='bitter', pass_context=True)
     async def bitter(self, context):
-        """`bitter` command not yet implemented."""
-        await self.bot.say('`bitter` command not yet implemented.')
+        """`bitter` sub-command not yet implemented."""
+        await self.bot.say('`bitter` sub-command not yet implemented.')
 
-    @_savor.command(name='salty', pass_context=True)
+    @_taste.command(name='salty', pass_context=True)
     async def salty(self, context):
-        """`salty` command not yet implemented."""
-        await self.bot.say('`salty` command not yet implemented.')
+        """`salty` sub-command not yet implemented."""
+        await self.bot.say('`salty` sub-command not yet implemented.')
 
-    @_savor.command(name='umami', pass_context=True)
+    @_taste.command(name='umami', pass_context=True)
     async def umami(self, context):
-        """`umami` command not yet implemented."""
-        await self.bot.say('`umami` command not yet implemented.')
-
+        """`umami` sub-command not yet implemented."""
+        await self.bot.say('`umami` sub-command not yet implemented.')
 
 
 def setup(bot):

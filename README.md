@@ -43,12 +43,17 @@ Most of my cogs have no real value and are just for fun.
 
       | Sub-Command | Options | Description |
       | ----------- | ------- | ----------- |
-      | _bitter_ | | |
       | _gusto_ | | |
       | _juicy_ | | |
+      | _spicy_ | | |
+
+    - `taste`
+
+      | Sub-Command | Options | Description |
+      | ----------- | ------- | ----------- |
+      | _bitter_ | | |
       | _salty_ | | |
       | _sour_ | | |
-      | _spicy_ | | |
       | _sweet_ | | |
       | _umami_ | | |
 
