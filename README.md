@@ -25,7 +25,7 @@ Most of my cogs have no real value and are just for fun.
 ## COGS
 
 [_**BASTA!**_](https://github.com/gannon93/gkit_cogs/wiki/BASTA!) (`basta`)
-  - And so the lord said to me, **BASTA!**
+  - And so the lord said to me, _**BASTA!**_
   - Commands:
     - `basta`
 
