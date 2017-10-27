@@ -5,5 +5,5 @@
     "DISABLED" : false,
     "NAME" : "FlavorSavor",
     "TAGS" : ["inspirational", "flavortown", "Fieri"],
-    "INSTALL_MSG" : "Usage: `[p]savor`"
+    "INSTALL_MSG" : "Usage: `[p]help savor`"
 }

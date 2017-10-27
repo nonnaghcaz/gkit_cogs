@@ -1,7 +1,7 @@
 {
     "AUTHOR" : "Gannon",
-    "SHORT" : "[WIP] What, do you want a cookie?",
-    "DESCRIPTION" : "[WIP] What, do you want a cookie?",
+    "SHORT" : "What, do you want a cookie?",
+    "DESCRIPTION" : "What, do you want a cookie?",
     "DISABLED" : false,
     "NAME" : "WannaCookie",
     "TAGS" : ["fun"],
