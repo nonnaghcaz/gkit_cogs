@@ -24,7 +24,7 @@ Most of my cogs have no real value and are just for fun.
 
 ## COGS
 
-[_**BASTA**_](https://github.com/gannon93/gkit_cogs/wiki/BASTA!)
+[_**BASTA!**_](https://github.com/gannon93/gkit_cogs/wiki/BASTA!) (`basta`)
   - And so the lord said to me, **BASTA!**
   - Commands:
     - `basta`
@@ -36,7 +36,7 @@ Most of my cogs have no real value and are just for fun.
       | _user_ | `user` | |
 
 
-[_**FlavorSavor**_](https://github.com/gannon93/gkit_cogs/wiki/FlavorSavor)
+[_**FlavorSavor**_](https://github.com/gannon93/gkit_cogs/wiki/FlavorSavor) (`flavorsavor`)
   - Savor that Fieri flavor!
   - Commands:
     - `savor`
@@ -53,12 +53,12 @@ Most of my cogs have no real value and are just for fun.
       | _umami_ | | |
 
 
-**[COMING SOON]** [_**PapaBless**_](https://github.com/gannon93/gkit_cogs/wiki/PapaBless)
+**[COMING SOON]** [_**PapaBless**_](https://github.com/gannon93/gkit_cogs/wiki/PapaBless) (`papabless`)
   - Vape Naysh yall `\//\`
   - Commands: `UNAVAILABLE`
 
 
-[_**PEP20**_](https://github.com/gannon93/gkit_cogs/wiki/PEP20)
+[_**PEP20**_](https://github.com/gannon93/gkit_cogs/wiki/PEP20) (`pep20`)
   - The word of the BDFL is law.
   - Commands:
     - `bdlf`
@@ -70,7 +70,7 @@ Most of my cogs have no real value and are just for fun.
       | _preach_ | | |
 
 
-**[COMING SOON]** [_**SaltyDebt**_](https://github.com/gannon93/gkit_cogs/wiki/SaltyDebt)
+**[COMING SOON]** [_**SaltyDebt**_](https://github.com/gannon93/gkit_cogs/wiki/SaltyDebt) (`saltydebt`)
   - Feed your Salty Bet gambling addiction.
   - Commands:
     - `salty`
@@ -82,7 +82,7 @@ Most of my cogs have no real value and are just for fun.
       | _cashout_ | | |
 
 
-[_**WannaCookie**_](https://github.com/gannon93/gkit_cogs/wiki/WannaCookie)
+[_**WannaCookie**_](https://github.com/gannon93/gkit_cogs/wiki/WannaCookie) (`wannacookie`)
   - What, do you want a... ?
   - Commands:
     - `wanna`
