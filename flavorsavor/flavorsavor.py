@@ -28,8 +28,8 @@ class FlavorSavor:
     async def gusto(self, context):
         """Displays a random Guy Fieri quote with some gusto."""
         await self.bot.say(
-            context.message.author.mention + ' ' +
-            randchoice(self.quotes).upper())
+            context.message.author.mention + ' _**' +
+            randchoice(self.quotes).upper()) + '**_'
 
     @_savor.command(name='juicy', pass_context=True)
     async def juicy(self, context):
