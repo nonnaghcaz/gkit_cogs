@@ -9,6 +9,8 @@ from discord.ext import commands
 from .utils.dataIO import fileIO
 from random import choice as randchoice
 
+BASE_STRING = '{u} {fl}{q}{fr}'
+
 
 class FlavorSavor:
     """Cog displays random Guy Fieri quotes."""
@@ -21,25 +23,38 @@ class FlavorSavor:
     async def _savor(self, context):
         """Displays a random Guy Fieri quote."""
         if context.invoked_subcommand is None:
-            await self.bot.say(
-                context.message.author.mention + ' ' + randchoice(self.quotes))
+            await self.bot.say(BASE_STRING.format(
+                u=context.message.author.mention,
+                q=randchoice(self.quotes),
+                fl='',
+                fr=''))
 
     @_savor.command(name='gusto', pass_context=True)
     async def gusto(self, context):
         """Displays a random Guy Fieri quote with some gusto."""
-        await self.bot.say(
-            context.message.author.mention + ' _**' +
-            randchoice(self.quotes).upper()) + '**_'
+        await self.bot.say(BASE_STRING.format(
+            u=context.message.author.mention,
+            q=randchoice(self.quotes),
+            fl='**',
+            fr='**'))
 
     @_savor.command(name='juicy', pass_context=True)
     async def juicy(self, context):
         """`juicy` command not yet implemented."""
-        await self.bot.say('`juicy` command not yet implemented.')
+        await self.bot.say(BASE_STRING.format(
+            u=context.message.author.mention,
+            q=randchoice(self.quotes),
+            fl='_',
+            fr='_'))
 
     @_savor.command(name='spicy', pass_context=True)
     async def spicy(self, context):
         """`spicy` command not yet implemented."""
-        await self.bot.say('`spicy` command not yet implemented.')
+        await self.bot.say(BASE_STRING.format(
+            u=context.message.author.mention,
+            q=randchoice(self.quotes),
+            fl='_**',
+            fr='**_'))
 
     @_savor.command(name='sweet', pass_context=True)
     async def sweet(self, context):
