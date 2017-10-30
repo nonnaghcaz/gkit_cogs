@@ -55,24 +55,24 @@ install:
   - "pip install -r dev-requirements.txt"
   - "pip install -r requirements.txt"
 
-# build_script:
-#   # Build the compiled extension
-#   - "python setup.py build"
+build_script:
+  # Build the compiled extension
+  # - "python setup.py build"
 
-# test_script:
-#   # Run the project tests
-#   - "coverage run -m unittest discover"
+test_script:
+  # Run the project tests
+  - "coverage run -m unittest discover"
 
-# after_test:
-#   # If tests are successful, create binary packages for the project.
-#   - "python setup.py sdist"
-#   - "python setup.py bdist_wheel"
-#   - "python setup.py bdist_wininst"
-#   - ps: "ls dist"
+after_test:
+  # If tests are successful, create binary packages for the project.
+  # - "python setup.py sdist"
+  # - "python setup.py bdist_wheel"
+  # - "python setup.py bdist_wininst"
+  # - ps: "ls dist"
 
-# artifacts:
-#   # Archive the generated packages in the ci.appveyor.com build report.
-#   - path: dist\*
+artifacts:
+  # Archive the generated packages in the ci.appveyor.com build report.
+  - path: dist\*
 
 #on_success:
 #  - TODO: upload the content of dist/*.whl to a public wheelhouse
