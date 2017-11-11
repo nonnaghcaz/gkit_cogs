@@ -65,7 +65,6 @@ class VapeNaysh:
                         reviews_str = ' _**~' + str(reviews) + ' reviews**_'
 
                         img_url = 'http:' + self.get_image(soup)
-                        # print(img_url)
 
                         if rating >= 4:
                             tag = ':boom:'

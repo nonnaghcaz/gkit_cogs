@@ -58,11 +58,6 @@ Most of my cogs have no real value and are just for fun.
       | _umami_ | | |
 
 
-**[COMING SOON]** [_**PapaBless**_](https://github.com/gannon93/gkit_cogs/wiki/PapaBless) (`papabless`)
-  - Vape Naysh yall `\//\`
-  - Commands: `UNAVAILABLE`
-
-
 [_**PEP20**_](https://github.com/gannon93/gkit_cogs/wiki/PEP20) (`pep20`)
   - The word of the BDFL is law.
   - Commands:
@@ -85,6 +80,17 @@ Most of my cogs have no real value and are just for fun.
       | _balance_ | | |
       | _bet_ | | |
       | _cashout_ | | |
+
+
+**[NEW]** [_**VapeNaysh**_](https://github.com/gannon93/gkit_cogs/wiki/VapeNaysh) (`vapenaysh`)
+  - Vape Naysh yall `\//\`
+  - Commands:
+      - `vape`
+
+      | Sub-Command | Options | Description |
+      | ----------- | ------- | ----------- |
+      | _bdv_ | `flavor`| Search for a flavor on Blue Dot Vapors |
+      | _wjl_ | `flavor`| Search for a flavor on White Label Juice Co. |
 
 
 [_**WannaCookie**_](https://github.com/gannon93/gkit_cogs/wiki/WannaCookie) (`wannacookie`)
