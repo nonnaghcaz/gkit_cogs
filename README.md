@@ -84,6 +84,8 @@ Most of my cogs have no real value and are just for fun.
 
 **[NEW]** [_**VapeNaysh**_](https://github.com/gannon93/gkit_cogs/wiki/VapeNaysh) (`vapenaysh`)
   - Vape Naysh yall `\//\`
+  - Requires:
+      - BeautifulSoup4
   - Commands:
       - `vape`
 
