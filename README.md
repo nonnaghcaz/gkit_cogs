@@ -22,12 +22,12 @@ Most of my cogs have no real value and are just for fun.
 
 ---
 
-## [:book:](https://github.com/gannon93/gkit_cogs/wiki/Cogs)[:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/) COGS
+## [:book:](https://github.com/gannon93/gkit_cogs/wiki/Cogs) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/) COGS
 
   - Click :book: to go to the GitHub Wiki page.
   - Click :mute: to go the the Cogs.Red page.
 
-[:book:](https://github.com/gannon93/gkit_cogs/wiki/BASTA!)[:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/basta/) _**BASTA!**_ (`basta`)
+[:book:](https://github.com/gannon93/gkit_cogs/wiki/BASTA!) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/basta/) _**BASTA!**_ (`basta`)
   - And so the lord said to me, _**BASTA!**_
   - Commands:
     - `basta`
@@ -39,7 +39,7 @@ Most of my cogs have no real value and are just for fun.
       | _user_ | `user` | |
 
 
-[:book:](https://github.com/gannon93/gkit_cogs/wiki/FlavorSavor)[:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/flavorsavor/) _**FlavorSavor**_ (`flavorsavor`)
+[:book:](https://github.com/gannon93/gkit_cogs/wiki/FlavorSavor) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/flavorsavor/) _**FlavorSavor**_ (`flavorsavor`)
   - Savor that Fieri flavor!
   - Commands:
     - `savor`
@@ -61,7 +61,7 @@ Most of my cogs have no real value and are just for fun.
       | _umami_ | | |
 
 
-[:book:](https://github.com/gannon93/gkit_cogs/wiki/PEP20)[:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/pep20/) _**PEP20**_ (`pep20`)
+[:book:](https://github.com/gannon93/gkit_cogs/wiki/PEP20) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/pep20/) _**PEP20**_ (`pep20`)
   - The word of the BDFL is law.
   - Commands:
     - `bdlf`
@@ -73,7 +73,7 @@ Most of my cogs have no real value and are just for fun.
       | _preach_ | | |
 
 
-[:book:](https://github.com/gannon93/gkit_cogs/wiki/SaltyDebt)[:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/saltydebt/) **[COMING SOON]** _**SaltyDebt**_ (`saltydebt`)
+[:book:](https://github.com/gannon93/gkit_cogs/wiki/SaltyDebt) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/saltydebt/) **[COMING SOON]** _**SaltyDebt**_ (`saltydebt`)
   - Feed your Salty Bet gambling addiction.
   - Commands:
     - `salty`
@@ -85,7 +85,7 @@ Most of my cogs have no real value and are just for fun.
       | _cashout_ | | |
 
 
-[:book:](https://github.com/gannon93/gkit_cogs/wiki/VapeNaysh)[:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/vapenaysh/) **[NEW]** _**VapeNaysh**_ (`vapenaysh`)
+[:book:](https://github.com/gannon93/gkit_cogs/wiki/VapeNaysh) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/vapenaysh/) **[NEW]** _**VapeNaysh**_ (`vapenaysh`)
   - Vape Naysh yall `\//\`
   - Requires:
     - [BeautifulSoup4](https://pypi.python.org/pypi/beautifulsoup4) (`pip install beautifulsoup4`)
@@ -98,7 +98,7 @@ Most of my cogs have no real value and are just for fun.
       | _wlj_ | `name-of-flavor`| Search for a flavor on White Label Juice Co. |
 
 
-[:book:](https://github.com/gannon93/gkit_cogs/wiki/WannaCookie)[:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/wannacookie/) _**WannaCookie**_ (`wannacookie`)
+[:book:](https://github.com/gannon93/gkit_cogs/wiki/WannaCookie) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/wannacookie/) _**WannaCookie**_ (`wannacookie`)
   - What, do you want a... ?
   - Commands:
     - `wanna`
