@@ -24,8 +24,12 @@ Most of my cogs have no real value and are just for fun.
 
 ## [:book:](https://github.com/gannon93/gkit_cogs/wiki/Cogs) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/) COGS
 
+The following is a list of my available cogs.  
+
   - Click :book: to go to the GitHub Wiki page.
   - Click :mute: to go the the Cogs.Red page.
+
+---
 
 [:book:](https://github.com/gannon93/gkit_cogs/wiki/BASTA!) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/basta/) _**BASTA!**_ (`basta`)
   - And so the lord said to me, _**BASTA!**_
@@ -38,6 +42,7 @@ Most of my cogs have no real value and are just for fun.
       | _satan_ | | |
       | _user_ | `user` | |
 
+---
 
 [:book:](https://github.com/gannon93/gkit_cogs/wiki/FlavorSavor) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/flavorsavor/) _**FlavorSavor**_ (`flavorsavor`)
   - Savor that Fieri flavor!
@@ -60,6 +65,7 @@ Most of my cogs have no real value and are just for fun.
       | _sweet_ | | |
       | _umami_ | | |
 
+---
 
 [:book:](https://github.com/gannon93/gkit_cogs/wiki/PEP20) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/pep20/) _**PEP20**_ (`pep20`)
   - The word of the BDFL is law.
@@ -72,6 +78,7 @@ Most of my cogs have no real value and are just for fun.
       | _pontificate_ | | |
       | _preach_ | | |
 
+---
 
 [:book:](https://github.com/gannon93/gkit_cogs/wiki/SaltyDebt) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/saltydebt/) **[COMING SOON]** _**SaltyDebt**_ (`saltydebt`)
   - Feed your Salty Bet gambling addiction.
@@ -84,6 +91,7 @@ Most of my cogs have no real value and are just for fun.
       | _bet_ | | |
       | _cashout_ | | |
 
+---
 
 [:book:](https://github.com/gannon93/gkit_cogs/wiki/VapeNaysh) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/vapenaysh/) **[NEW]** _**VapeNaysh**_ (`vapenaysh`)
   - Vape Naysh yall `\//\`
@@ -97,6 +105,7 @@ Most of my cogs have no real value and are just for fun.
       | _bdv_ | `name-of-flavor`| Search for a flavor on Blue Dot Vapors |
       | _wlj_ | `name-of-flavor`| Search for a flavor on White Label Juice Co. |
 
+---
 
 [:book:](https://github.com/gannon93/gkit_cogs/wiki/WannaCookie) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/wannacookie/) _**WannaCookie**_ (`wannacookie`)
   - What, do you want a... ?
