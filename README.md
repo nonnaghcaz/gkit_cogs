@@ -92,7 +92,7 @@ Most of my cogs have no real value and are just for fun.
       | Sub-Command | Options | Description |
       | ----------- | ------- | ----------- |
       | _bdv_ | `name-of-flavor`| Search for a flavor on Blue Dot Vapors |
-      | _wjl_ | `name-of-flavor`| Search for a flavor on White Label Juice Co. |
+      | _wlj_ | `name-of-flavor`| Search for a flavor on White Label Juice Co. |
 
 
 [_**WannaCookie**_](https://github.com/gannon93/gkit_cogs/wiki/WannaCookie) (`wannacookie`)
@@ -113,7 +113,7 @@ These cogs are in _**very**_ early development, but can be downloaded through Re
 
   - `[p]cog repo add gkit_cogs https://github.com/gannon93/gkit_cogs`
   - `[p]cog install gkit_cogs <cog>`
-    - `basta`, `flavorsavor`, `pep20`, `wannacookie`
+    - Available `<cog>` options: `basta`, `flavorsavor`, `pep20`, `vapenaysh`, `wannacookie`
 
 ---
 
