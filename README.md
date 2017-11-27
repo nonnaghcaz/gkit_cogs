@@ -27,7 +27,7 @@ Most of my cogs have no real value and are just for fun.
 The following is a list of my available cogs.  
 
   - Click :book: to go to the GitHub Wiki page.
-  - Click :mute: to go the the Cogs.Red page.
+  - Click :mute: to go the the [Cogs.Red](https://cogs.red) page.
 
 ---
 
