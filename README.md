@@ -24,7 +24,7 @@ Most of my cogs have no real value and are just for fun.
 
 ## COGS
 
-[_**BASTA!**_](https://github.com/gannon93/gkit_cogs/wiki/BASTA!) (`basta`)
+[_**BASTA!**_](https://github.com/gannon93/gkit_cogs/wiki/BASTA!) ([:o: `basta`](https://cogs.red/cogs/gannon93/gkit_cogs/basta/))
   - And so the lord said to me, _**BASTA!**_
   - Commands:
     - `basta`
@@ -36,7 +36,7 @@ Most of my cogs have no real value and are just for fun.
       | _user_ | `user` | |
 
 
-[_**FlavorSavor**_](https://github.com/gannon93/gkit_cogs/wiki/FlavorSavor) (`flavorsavor`)
+[_**FlavorSavor**_](https://github.com/gannon93/gkit_cogs/wiki/FlavorSavor) ([:o: `flavorsavor`](https://cogs.red/cogs/gannon93/gkit_cogs/flavorsavor/))
   - Savor that Fieri flavor!
   - Commands:
     - `savor`
@@ -58,7 +58,7 @@ Most of my cogs have no real value and are just for fun.
       | _umami_ | | |
 
 
-[_**PEP20**_](https://github.com/gannon93/gkit_cogs/wiki/PEP20) (`pep20`)
+[_**PEP20**_](https://github.com/gannon93/gkit_cogs/wiki/PEP20) ([:o: `pep20`](https://cogs.red/cogs/gannon93/gkit_cogs/pep20/))
   - The word of the BDFL is law.
   - Commands:
     - `bdlf`
@@ -70,7 +70,7 @@ Most of my cogs have no real value and are just for fun.
       | _preach_ | | |
 
 
-**[COMING SOON]** [_**SaltyDebt**_](https://github.com/gannon93/gkit_cogs/wiki/SaltyDebt) (`saltydebt`)
+**[COMING SOON]** [_**SaltyDebt**_](https://github.com/gannon93/gkit_cogs/wiki/SaltyDebt) ([:o: `saltydebt`](https://cogs.red/cogs/gannon93/gkit_cogs/saltydebt/))
   - Feed your Salty Bet gambling addiction.
   - Commands:
     - `salty`
@@ -82,7 +82,7 @@ Most of my cogs have no real value and are just for fun.
       | _cashout_ | | |
 
 
-**[NEW]** [_**VapeNaysh**_](https://github.com/gannon93/gkit_cogs/wiki/VapeNaysh) (`vapenaysh`)
+**[NEW]** [_**VapeNaysh**_](https://github.com/gannon93/gkit_cogs/wiki/VapeNaysh) ([:o: `vapenaysh`](https://cogs.red/cogs/gannon93/gkit_cogs/vapenaysh/))
   - Vape Naysh yall `\//\`
   - Requires:
     - [BeautifulSoup4](https://pypi.python.org/pypi/beautifulsoup4) (`pip install beautifulsoup4`)
@@ -95,7 +95,7 @@ Most of my cogs have no real value and are just for fun.
       | _wlj_ | `name-of-flavor`| Search for a flavor on White Label Juice Co. |
 
 
-[_**WannaCookie**_](https://github.com/gannon93/gkit_cogs/wiki/WannaCookie) (`wannacookie`)
+[_**WannaCookie**_](https://github.com/gannon93/gkit_cogs/wiki/WannaCookie) ([:o: `wannacookie`](https://cogs.red/cogs/gannon93/gkit_cogs/wannacookie/))
   - What, do you want a... ?
   - Commands:
     - `wanna`
