@@ -27,6 +27,8 @@ The following is a list of my available cogs.
 
 [:book:](https://github.com/gannon93/gkit_cogs/wiki/ArkAdvisor) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/arkadvisor/) **[ALPHA]** _**ArkAdvisor**_ (`arkadvisor`)
   - All of your _**ARK: Survival Evolved**_ needs at your fingertips.
+  - Requires:
+    - [BeautifulSoup4](https://pypi.python.org/pypi/beautifulsoup4) (`pip install beautifulsoup4`)
   - Commands:
     - `ark`
 
