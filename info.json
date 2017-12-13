@@ -1,7 +1,7 @@
 {
     "AUTHOR" : "Gannon",
-    "INSTALL_MSG" : "`[p]cog info gkit_cogs`",
+    "INSTALL_MSG" : "Thanks for adding my repo!\n\nCheck out my available cogs:\n\n\t`[p]cog info gkit_cogs`",
     "NAME" : "gkit_cogs",
-    "SHORT" : "Random little cogs that will probably help no one.",
-    "DESCRIPTION" : "`[p]cog list gkit_cogs`"
+    "SHORT" : "Cogs written to eliminate repetitive tasks and lighten the load.",
+    "DESCRIPTION" : "Repo foremost consists of web scraper cogs to eliminate repetitive searches. Some spicy memes thrown in for shiggles.\n\n\t`[p]cog list gkit_cogs`"
 }

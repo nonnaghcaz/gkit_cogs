@@ -12,7 +12,7 @@ This repository is a collection of cogs written for [Twentysix's](https://github
 
 > Red is a fully modular bot – meaning all features and commands can be enabled/disabled to your liking, making it completely customizable.
 
-Most of my cogs have no real value and are just for fun.  
+Much of my cogs started as dog trash "generate a random number and say a random meme from a pre-defined dictionary of phrases", but the repo is slowly gaining actual utilization. Check out VapeNaysh and ArkAdvisor (when it's released) for some non-garbage cogs.
 
 ---
 
