@@ -42,13 +42,13 @@ class VapeNaysh:
         self.bot = bot
 
     @commands.group(name='vape', pass_context=True)
-    async def _vape(self, context):
+    async def vape(self, context):
         if not soupAvailable:
             await self.bot.say('Sorry, you need BeautifulSoup4 installed.')
         if context.invoked_subcommand is None:
             await self.bot.say('Type `[p]help vape` for info.')
 
-    @_vape.command(
+    @vape.command(
         name='bdv', pass_context=True, aliases=['bluedot', 'bluedotvapors'])
     async def bdv(self, context, flavor):
         if not flavor:

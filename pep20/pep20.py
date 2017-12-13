@@ -34,11 +34,11 @@ class BDFL:
         self.bot = bot
 
     @commands.group(name='bdfl', pass_context=True)
-    async def _bdfl(self, context):
+    async def bdfl(self, context):
         if context.invoked_subcommand is None:
             await self.bot.say("Type `[p]help bdfl` for info.")
 
-    @_bdfl.command(name='preach', pass_context=True)
+    @bdfl.command(name='preach', pass_context=True)
     async def preach(self, context):
         """Display the word of the BDFL."""
         await self.bot.say(
@@ -46,7 +46,7 @@ class BDFL:
             context.message.author.mention + '\n\n' +
             ZEN_OF_PYTHON)
 
-    @_bdfl.command(name='pontificate', pass_context=True)
+    @bdfl.command(name='pontificate', pass_context=True)
     async def pontificate(self, context):
         """Display the word of the BDFL with some gusto."""
         await self.bot.say((
@@ -54,8 +54,8 @@ class BDFL:
             context.message.author.mention + '\n\n' +
             ZEN_OF_PYTHON).upper())
 
-    @_bdfl.command(name='assimilate', pass_context=True)
-    async def assimilate(self, context):
+    @bdfl.command(name='assimilate', pass_context=False)
+    async def assimilate(self):
         """Display your allegiance to our BDFL overlord."""
         await self.bot.say(
             'Praise be, our Benevolent Dictator For Life, GUIDO VAN ROSSUM!')
