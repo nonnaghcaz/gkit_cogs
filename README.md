@@ -25,7 +25,7 @@ The following is a list of my available cogs.
 
 ---
 
-[:book:](https://github.com/gannon93/gkit_cogs/wiki/ArkAdvisor) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/arkadvisor/) _**ArkAdvisor**_ (`arkadvisor`)
+[:book:](https://github.com/gannon93/gkit_cogs/wiki/ArkAdvisor) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/arkadvisor/) **[ALPHA]** _**ArkAdvisor**_ (`arkadvisor`)
   - All of your _**ARK: Survival Evolved**_ needs at your fingertips.
   - Commands:
     - `ark`
