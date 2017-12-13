@@ -1,0 +1,9 @@
+{
+    "AUTHOR" : "Gannon",
+    "SHORT" : "",
+    "DESCRIPTION" : "",
+    "DISABLED" : false,
+    "NAME" : "ArkAdvisor",
+    "TAGS" : ["fun", "gaming", "ARK"],
+    "INSTALL_MSG" : "Usage: `[p]help ark`"
+}

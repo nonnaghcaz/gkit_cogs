@@ -32,7 +32,7 @@ The following is a list of my available cogs.
 
       | Sub-Command | Options | Description |
       | ----------- | ------- | ----------- |
-      | _kibble_ | `dino_name` or `dino_id` | Lookup preferred kibble for taming a dino |
+      | _tame_ | `dino_name` or `dino_id` | Lookup taming info for a dino (kibble & method so far) |
 
 ---
 
