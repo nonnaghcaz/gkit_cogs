@@ -85,7 +85,7 @@ The following is a list of my available cogs.
 
 ---
 
-[:book:](https://github.com/gannon93/gkit_cogs/wiki/SaltyDebt) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/saltydebt/) **[COMING SOON]** _**SaltyDebt**_ (`saltydebt`)
+[:book:](https://github.com/gannon93/gkit_cogs/wiki/SaltyDebt) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/saltydebt/) **[SUSPENDED]** _**SaltyDebt**_ (`saltydebt`)
   - Feed your Salty Bet gambling addiction.
   - Commands:
     - `salty`
