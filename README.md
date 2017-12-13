@@ -26,13 +26,13 @@ The following is a list of my available cogs.
 ---
 
 [:book:](https://github.com/gannon93/gkit_cogs/wiki/ArkAdvisor) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/arkadvisor/) _**ArkAdvisor**_ (`arkadvisor`)
-  - All of your _**ARK: survival Evolved**_ needs at your fingertips.
+  - All of your _**ARK: Survival Evolved**_ needs at your fingertips.
   - Commands:
-    - N/A
+    - `ark`
 
       | Sub-Command | Options | Description |
       | ----------- | ------- | ----------- |
-      | | | |
+      | _kibble_ | `dino_name` or `dino_id` | Lookup preferred kibble for taming a dino |
 
 ---
 
