@@ -25,6 +25,17 @@ The following is a list of my available cogs.
 
 ---
 
+[:book:](https://github.com/gannon93/gkit_cogs/wiki/ArkAdvisor) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/arkadvisor/) _**ArkAdvisor**_ (`arkadvisor`)
+  - All of your _**ARK: survival Evolved**_ needs at your fingertips.
+  - Commands:
+    - N/A
+
+      | Sub-Command | Options | Description |
+      | ----------- | ------- | ----------- |
+      | | | |
+
+---
+
 [:book:](https://github.com/gannon93/gkit_cogs/wiki/BASTA!) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/basta/) _**BASTA!**_ (`basta`)
   - And so the lord said to me, _**BASTA!**_
   - Commands:
