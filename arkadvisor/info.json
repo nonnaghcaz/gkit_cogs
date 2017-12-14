@@ -4,6 +4,7 @@
     "DESCRIPTION" : "",
     "DISABLED" : false,
     "NAME" : "ArkAdvisor",
+    "REQUIREMENTS" : ["beautifulsoup4"],
     "TAGS" : ["fun", "gaming", "ARK"],
     "INSTALL_MSG" : "Usage: `[p]help ark`"
 }

@@ -4,7 +4,7 @@
     "DESCRIPTION" : "Vape naysh y'all.\n\nNOTE: Vaporizers and the associated liquids/juices are regulated under the same laws as tobacco as of August 8, 2016. Please see the federal registrar entry for further information: https://www.federalregister.gov/documents/2016/05/10/2016-10685/deeming-tobacco-products-to-be-subject-to-the-federal-food-drug-and-cosmetic-act-as-amended-by-the. Neither I, nor the Red creators, staff, or community, promote underage use of tobacco.",
     "DISABLED" : false,
     "NAME" : "VapeNaysh",
-    "TAGS" : ["h3h3", "vaping", "vape"],
+    "TAGS" : ["h3h3", "vaping", "vape", "utility"],
     "REQUIREMENTS" : ["beautifulsoup4"],
     "INSTALL_MSG" : "Usage: `[p]help vape`\n\nNOTE: Vaporizers and the associated liquids/juices are regulated under the same laws as tobacco as of August 8, 2016. Please see the federal registrar entry for further information: https://www.federalregister.gov/documents/2016/05/10/2016-10685/deeming-tobacco-products-to-be-subject-to-the-federal-food-drug-and-cosmetic-act-as-amended-by-the. Neither I, nor the Red creators, staff, or community, promote underage use of tobacco."
 }
