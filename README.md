@@ -34,7 +34,9 @@ The following is a list of my available cogs.
 
       | Sub-Command | Options | Description |
       | ----------- | ------- | ----------- |
-      | _tame_ | `dino_name` or `dino_id` | Lookup taming info for a dino (kibble & method so far) |
+      | _tame_ | - `dino_name` (String) or `dino_id` (Integer) | Lookup taming info for a dino (kibble & method so far) |
+      | _give_ | - `mod_name` (String) or `mod_id` (Integer) or None (None),<br />- `item_name` (String) or `item_id` (Integer),<br />- `amount` (Integer),<br />- `quality` (Integer) | Builds cheat command to give the player items |
+      | _spawn_ | - `dino_name` (String) or `dino_id` (Integer),<br />- `do_tame` (Boolean) | Builds cheat command to spawn a dino, which can be tamed or wild
 
 ---
 
