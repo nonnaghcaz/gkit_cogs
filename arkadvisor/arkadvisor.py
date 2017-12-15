@@ -128,7 +128,7 @@ class ArkAdvisor:
     def get_kibble(self, soup):
         try:
             ret_val = soup.find(
-                'a', {'href': re.compile('/Kibble')}).get('title')
+                'a', {'href': re.compile('/File:Kibble')}).get('title')
         except Exception:
             ret_val = ''
         return ret_val
