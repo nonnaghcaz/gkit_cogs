@@ -3,6 +3,8 @@
 import discord
 from discord.ext import commands
 
+from .utils import checks
+
 try:
     # check if BeautifulSoup4 is installed
     from bs4 import BeautifulSoup
@@ -37,6 +39,15 @@ class ArkAdvisor:
             await self.bot.say('Sorry, you need BeautifulSoup4 installed.')
         if context.invoked_subcommand is None:
             await self.bot.say('Type `[p]help ark` for info.')
+
+    @commands.group(pass_context=True)
+    @checks.serverowner_or_permissions(administrator=True)
+    async def _test(self, context):
+        async with aiohttp.ClientSession() as session:
+            async with session.get(BASE_URL) as response:
+                if response.status is 200:
+                    data = await response.text()
+                    await self.bot.say(data)
 
     @ark.command(
         name='tame', pass_context=True, aliases=[])
