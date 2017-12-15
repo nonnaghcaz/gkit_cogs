@@ -75,7 +75,7 @@ class ArkAdvisor:
                         method = self.get_method(soup)
 
                         embed = discord.Embed(
-                            colour=0x9933FF, title=soup.title.string)
+                            colour=0x9933FF, title=str(soup.title.string))
                         embed.set_thumbnail(url=img_url)
                         embed.add_field(
                             name='Taming Method', value=method)
