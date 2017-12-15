@@ -75,7 +75,7 @@ class ArkAdvisor:
                         method = self.get_method(soup)
 
                         embed = discord.Embed(
-                            colour=0x9933FF, title=dino.title())
+                            colour=0x9933FF, title=soup.title.string)
                         embed.set_thumbnail(url=img_url)
                         embed.add_field(
                             name='Taming Method', value=method)
@@ -128,7 +128,7 @@ class ArkAdvisor:
     def get_kibble(self, soup):
         try:
             ret_val = soup.find(
-                'a', {'href': re.compile('/File:Kibble')}).get('title')
+                'a', {'href': re.compile('/Kibble (')}).get('title')
         except Exception:
             ret_val = ''
         return ret_val
