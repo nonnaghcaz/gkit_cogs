@@ -75,16 +75,20 @@ class ArkAdvisor:
                         method = self.get_method(soup)
                         title = str(soup.title)[
                             len('<title>'):-len('</title>')]
-                        print(title)
+
+                        print('*' * 72 + '\n\n')
+                        print('Title:  \t' + title)
+                        print('Method: \t' + method)
+                        print('Kibble: \t' + kibble)
 
                         embed = discord.Embed(
                             colour=0x9933FF,
-                            title='ERROR')
+                            title=title)
                         embed.set_thumbnail(url=img_url)
                         embed.add_field(
                             name='Taming Method', value=method)
-                        embed.add_field(
-                            name='Preferred Kibble', value=kibble)
+                        # embed.add_field(
+                        #     name='Preferred Kibble', value=kibble)
                         await self.bot.say(embed=embed)
                     else:
                         await self.bot.say(
