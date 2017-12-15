@@ -47,7 +47,8 @@ class ArkAdvisor:
             async with session.get(BASE_URL) as response:
                 if response.status is 200:
                     data = await response.text()
-                    await self.bot.say(data)
+                    soup = BeautifulSoup(data, 'html.parser')
+                    await self.bot.say(soup.title)
 
     @ark.command(
         name='tame', pass_context=True, aliases=[])
