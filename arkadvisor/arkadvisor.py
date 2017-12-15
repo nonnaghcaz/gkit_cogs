@@ -45,7 +45,7 @@ class ArkAdvisor:
     async def _test(self, context, page=''):
         url = os.path.join(BASE_URL, page.title().replace(' ', '_'))
         async with aiohttp.ClientSession() as session:
-            async with session.get(url) as response:
+            async with session.get(BASE_URL) as response:
                 if response.status is 200:
                     data = await response.text()
                     soup = BeautifulSoup(data, 'html.parser')
