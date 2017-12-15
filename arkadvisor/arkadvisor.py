@@ -77,7 +77,6 @@ class ArkAdvisor:
 
                         embed = discord.Embed(colour=0x9933FF, title=dino)
                         embed.set_thumbnail(url=img_url)
-                        embed.add_field()
                         embed.add_field(
                             name='Taming Method', value=method)
                         embed.add_field(
