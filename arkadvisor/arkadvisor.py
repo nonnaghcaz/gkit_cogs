@@ -40,7 +40,7 @@ class ArkAdvisor:
         if context.invoked_subcommand is None:
             await self.bot.say('Type `[p]help ark` for info.')
 
-    @commands.group(pass_context=True)
+    @ark.command(name='test', pass_context=True)
     @checks.serverowner_or_permissions(administrator=True)
     async def _test(self, context):
         async with aiohttp.ClientSession() as session:
