@@ -73,11 +73,13 @@ class ArkAdvisor:
                         kibble = self.get_kibble(soup)
                         img_url = self.get_kibble_image(soup)
                         method = self.get_method(soup)
+                        title = str(soup.title)[
+                            len('<title>'):-len('</title>')]
+                        print(title)
 
                         embed = discord.Embed(
                             colour=0x9933FF,
-                            title=str(
-                                soup.title)[len('<title>'):-len('</title>')])
+                            title=title if title else 'ERROR')
                         embed.set_thumbnail(url=img_url)
                         embed.add_field(
                             name='Taming Method', value=method)
