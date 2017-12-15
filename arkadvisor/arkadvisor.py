@@ -130,16 +130,16 @@ class ArkAdvisor:
                     'title': 'Taming', 'href': re.compile(
                         '/Taming#')}).getText()
         except Exception:
-            ret_val = ''
-        return ret_val if ret_val else ''
+            ret_val = 'ERROR'
+        return ret_val
 
     def get_kibble(self, soup):
         try:
             ret_val = soup.find(
                 'a', {'href': re.compile('/Kibble (')}).get('title')
         except Exception:
-            ret_val = ''
-        return ret_val if ret_val else ''
+            ret_val = 'ERROR'
+        return ret_val
 
     def get_kibble_image(self, soup):
         try:
@@ -147,8 +147,8 @@ class ArkAdvisor:
                 'a', {'href': re.compile('/File:Kibble')}).find('img').get(
                     'src')
         except Exception:
-            ret_val = ''
-        return ret_val if ret_val else ''
+            ret_val = 'ERROR'
+        return ret_val
 
     def get_dossier_image(self, dino, soup):
         try:
@@ -156,8 +156,8 @@ class ArkAdvisor:
                 'a', {'href': ('/File:Dossier_' + dino.title().replace(
                     ' ', '_'))}).find('img').get('src')
         except Exception:
-            ret_val = ''
-        return ret_val if ret_val else ''
+            ret_val = 'ERROR'
+        return ret_val
 
 
 def setup(bot):
