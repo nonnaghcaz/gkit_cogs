@@ -14,7 +14,6 @@ except ValueError:
 
 import aiohttp
 import re
-import os
 
 
 BASE_URL = 'https://ark.gamepedia.com'
@@ -75,7 +74,8 @@ class ArkAdvisor:
                         img_url = self.get_kibble_image(soup)
                         method = self.get_method(soup)
 
-                        embed = discord.Embed(colour=0x9933FF, title=dino)
+                        embed = discord.Embed(
+                            colour=0x9933FF, title=dino.title())
                         embed.set_thumbnail(url=img_url)
                         embed.add_field(
                             name='Taming Method', value=method)
@@ -118,7 +118,9 @@ class ArkAdvisor:
     def get_method(self, soup):
         try:
             ret_val = soup.find(
-                'a', {'title': 'Taming'}).getText()
+                'a', {
+                    'title': 'Taming', 'href': re.compile(
+                        '/Taming#')}).getText()
         except Exception:
             ret_val = ''
         return ret_val
