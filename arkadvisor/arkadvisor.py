@@ -43,7 +43,7 @@ class ArkAdvisor:
     @ark.command(name='test', pass_context=True)
     @checks.serverowner_or_permissions(administrator=True)
     async def _test(self, context, page=''):
-        url = os.path.join(BASE_URL, page.title.replace(' ', '_'))
+        url = os.path.join(BASE_URL, page.title().replace(' ', '_'))
         async with aiohttp.ClientSession() as session:
             async with session.get(url) as response:
                 if response.status is 200:
