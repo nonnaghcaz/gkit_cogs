@@ -79,7 +79,7 @@ class ArkAdvisor:
 
                         embed = discord.Embed(
                             colour=0x9933FF,
-                            title=title if title else 'ERROR')
+                            title='ERROR')
                         embed.set_thumbnail(url=img_url)
                         embed.add_field(
                             name='Taming Method', value=method)
