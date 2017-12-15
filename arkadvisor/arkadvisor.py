@@ -70,7 +70,7 @@ class ArkAdvisor:
                             'Sorry, could not find your dino: {}'.format(
                                 dino))
 
-    def check_dino_is_tamable(self, dino):
+    async def check_dino_is_tamable(self, dino):
         found = False
 
         url = os.path.join(BASE_URL, 'Category:Tameable_creatures')
@@ -125,9 +125,8 @@ class ArkAdvisor:
     def get_dossier_image(self, dino, soup):
         try:
             ret_val = soup.find(
-                'a', {'href': (
-                    '/File:Dossier_' + dino.title().replace(' ', '_')})).find(
-                        'img').get('src')
+                'a', {'href': ('/File:Dossier_' + dino.title().replace(
+                    ' ', '_'))}).find('img').get('src')
         except Exception:
             ret_val = ''
         return ret_val
