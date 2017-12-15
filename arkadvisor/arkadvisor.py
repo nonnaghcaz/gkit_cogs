@@ -12,6 +12,7 @@ except ValueError:
 
 import aiohttp
 import re
+import os
 
 
 BASE_URL = 'https://ark.gamepedia.com'
