@@ -42,10 +42,13 @@ class ArkAdvisor:
 
     @ark.command(name='test', pass_context=True)
     @checks.serverowner_or_permissions(administrator=True)
-    async def _test(self, context, page=''):
-        url = os.path.join(BASE_URL, page.title().replace(' ', '_'))
+    async def _test(self, context, page=None):
+        url = BASE_URL
+        if page:
+            url = (
+                BASE_URL + '/' + page.title().replace(' ', '_'))
         async with aiohttp.ClientSession() as session:
-            async with session.get(BASE_URL) as response:
+            async with session.get(url) as response:
                 if response.status is 200:
                     data = await response.text()
                     soup = BeautifulSoup(data, 'html.parser')
@@ -60,7 +63,8 @@ class ArkAdvisor:
             await self.bot.say(
                 "Sorry, {} was not found or is not tamable.".format(dino))
         else:
-            url = os.path.join(BASE_URL, dino.title().replace(' ', '_'))
+            url = (
+                BASE_URL + '/' + dino.title().replace(' ', '_'))
             async with aiohttp.ClientSession() as session:
                 async with session.get(url) as response:
                     if response.status is 200:
@@ -87,7 +91,8 @@ class ArkAdvisor:
     async def check_dino_is_tamable(self, dino):
         found = False
 
-        url = os.path.join(BASE_URL, 'Category:Tameable_creatures')
+        url = (
+            BASE_URL + '/' + 'Category:Tameable_creatures')
         async with aiohttp.ClientSession() as session:
             async with session.get(url) as response:
                 if response.status is 200:
