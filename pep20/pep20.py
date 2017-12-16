@@ -33,10 +33,9 @@ class BDFL:
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.group(name='bdfl', pass_context=True)
+    @commands.group(name='bdfl', invoke_without_command=True)
     async def bdfl(self, context):
-        if context.invoked_subcommand is None:
-            await self.bot.say("Type `[p]help bdfl` for info.")
+        await self.bot.say("Type `[p]help bdfl` for info.")
 
     @bdfl.command(name='preach', pass_context=True)
     async def preach(self, context):
@@ -54,7 +53,7 @@ class BDFL:
             context.message.author.mention + '\n\n' +
             ZEN_OF_PYTHON).upper())
 
-    @bdfl.command(name='assimilate', pass_context=False)
+    @bdfl.command(name='assimilate')
     async def assimilate(self):
         """Display your allegiance to our BDFL overlord."""
         await self.bot.say(

@@ -9,11 +9,10 @@ class WannaCookie:
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.group(name='wanna', pass_context=True)
-    async def wanna(self, context):
+    @commands.group(name='wanna', invoke_without_command=True)
+    async def wanna(self):
         """What, do you want a..."""
-        if context.invoked_subcommand is None:
-            await self.bot.say('Type `[p]help wanna` for info.')
+        await self.bot.say('Type `[p]help wanna` for info.')
 
     @wanna.command(name='cookie', pass_context=True)
     async def cookie(self, context, user: discord.Member=None):

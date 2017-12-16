@@ -22,12 +22,11 @@ class FlavorSavor:
     @commands.group(name='savor', pass_context=True)
     async def savor(self, context):
         """Displays a random Guy Fieri quote."""
-        if context.invoked_subcommand is None:
-            await self.bot.say(BASE_STRING.format(
-                u=context.message.author.mention,
-                q=randchoice(self.quotes),
-                fl='',
-                fr=''))
+        await self.bot.say(BASE_STRING.format(
+            u=context.message.author.mention,
+            q=randchoice(self.quotes),
+            fl='',
+            fr=''))
 
     @savor.command(name='gusto', pass_context=True)
     async def gusto(self, context):

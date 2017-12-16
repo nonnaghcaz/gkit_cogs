@@ -56,8 +56,8 @@ class VapeNaysh:
         self.embed_color = DEFAULT_COLOR
 
     @commands.group(
-        name='vape', pass_context=True, invoke_without_command=True)
-    async def vape(self, context):
+        name='vape', invoke_without_command=True)
+    async def vape(self):
         if not soupAvailable:
             await self.bot.say('Sorry, you need BeautifulSoup4 installed.')
         await self.bot.say('Type `[p]help vape` for info.')

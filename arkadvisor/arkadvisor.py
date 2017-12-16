@@ -1,4 +1,4 @@
-"""DESCRIPTION."""
+"""All your ARK: Survival Evolved needs at your fingertips."""
 
 import discord
 from discord.ext import commands
@@ -32,8 +32,8 @@ class ArkAdvisor:
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.group(name='ark', pass_context=True, invoke_without_command=True)
-    async def ark(self, context):
+    @commands.group(name='ark', invoke_without_command=True)
+    async def ark(self):
         if not soupAvailable:
             await self.bot.say('Sorry, you need BeautifulSoup4 installed.')
         await self.bot.say('Type `[p]help ark` for info.')
