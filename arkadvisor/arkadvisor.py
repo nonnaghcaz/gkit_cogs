@@ -39,7 +39,7 @@ class ArkAdvisor:
         if context.invoked_subcommand is None:
             await self.bot.say('Type `[p]help ark` for info.')
 
-    @ark.command(name='test', pass_context=True)
+    @ark.command(name='test', pass_context=True, hidden=True)
     @checks.serverowner_or_permissions(administrator=True)
     async def _test(self, context, page=None):
         url = BASE_URL
@@ -55,7 +55,7 @@ class ArkAdvisor:
 
     @ark.command(
         name='tame', pass_context=True, aliases=[])
-    async def tame(self, context, dino):
+    async def tame(self, context, dino: str):
         if not dino:
             await self.bot.say("Type `[p]help ark tame` for info.")
         elif not self.check_dino_is_tamable(dino):
