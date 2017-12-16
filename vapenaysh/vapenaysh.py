@@ -106,20 +106,31 @@ class VapeNaysh:
         print('[vape.bdv] flavor: {}'.format(flavor))
         print('\n\n' + '*' * 72 + '\n\n')
 
-        if flavor.upper() in 'ABOUT':
+        if flavor.upper() in 'CONTACT':
             pass
-        elif flavor.upper() in 'CONTACT':
-            pass
-        elif flavor.upper() in ['SHIP', 'SHIPPING', 'PROCESSING']:
+        elif flavor.upper() in ['ABOUT', 'SHIP', 'SHIPPING', 'PROCESSING']:
             url = 'https://www.bluedotvapors.com/'
             ship_str = 'ERROR'
+            about_str = 'ERROR'
+            img_url = ''
+
             async with aiohttp.ClientSession() as session:
                 async with session.get(url) as response:
                     if response.status is 200:
                         data = await response.text()
                         soup = BeautifulSoup(data, 'html.parser')
                         ship_str = self.get_processing_message(soup, 0)
-            await self.bot.say('[PROCESSING] Blue Dot Vapors: ' + ship_str)
+                        about_str = self.get_about(soup, 0)
+                        img_url = self.get_logo(soup, 0)
+
+                    embed = discord.Embed(
+                        colour=self.embed_color, title='Blue Dot Vapors')
+                    if img_url:
+                        embed.set_image(img_url)
+                    embed.add_field(name='About', value=about_str)
+                    embed.add_field(name='Processing', value=ship_str)
+
+                    await self.bot.say(embed=embed)
         else:
             await self.get_flavor(flavor, 0)
 
@@ -248,7 +259,8 @@ class VapeNaysh:
 
     def get_about(self, soup, mode):
         if mode is 0:
-            pass
+            return soup.find(
+                'div', {'id': 'about-description'}).getText().strip()
         elif mode is 1:
             pass
         return ''
@@ -256,6 +268,13 @@ class VapeNaysh:
     def get_contact(self, soup, mode):
         if mode is 0:
             pass
+        elif mode is 1:
+            pass
+        return ''
+
+    def get_logo(self, soup, mode):
+        if mode is 0:
+            return soup.find('a', {'id': 'logo'}).find('img').get('src')
         elif mode is 1:
             pass
         return ''
