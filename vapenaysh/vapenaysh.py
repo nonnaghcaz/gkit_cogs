@@ -350,7 +350,7 @@ class VapeNaysh:
         elif mode is 1:
             imgs = soup.find_all(
                 'a', {
-                    'href': re.compile('https://www.instagram.com/p/')})
+                    'href': re.compile('https://www.instagram.com/p/\w+/')})
             if imgs:
                 index_s = len('background-image: url(/')
                 index_e = len(');')
