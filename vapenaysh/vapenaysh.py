@@ -350,7 +350,7 @@ class VapeNaysh:
         elif mode is 1:
             insta_feed = soup.find('div', {'id': 'Instafeed-index-instagram'})
             imgs = insta_feed.find_all('a')
-            print('token: ' + str(imgs.get('data-access-token')))
+            print('token: ' + str(insta_feed.get('data-access-token')))
             if imgs:
                 index_s = len('background-image: url(/')
                 index_e = len(');')
