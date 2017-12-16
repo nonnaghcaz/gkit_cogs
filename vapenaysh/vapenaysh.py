@@ -285,7 +285,7 @@ class VapeNaysh:
     def get_name(self, soup, mode):
         if mode is 0 or mode is 1:
             return soup.find('h1', {'itemprop': 'name'}).getText()
-        return ''
+        return 'ERROR'
 
     def get_description(self, soup, mode):
         if mode is 0:
@@ -294,18 +294,17 @@ class VapeNaysh:
         elif mode is 1:
             return soup.find('div', {
                 'itemprop': 'description'}).find('p').getText()
-        return ''
+        return 'ERROR'
 
     def get_image(self, soup, mode):
-        ret_val = ''
         if mode is 0:
-            ret_val = 'http:' + soup.find(
+            return 'http:' + soup.find(
                 'img', {'id': 'productPhotoImg'}).get('src')
         elif mode is 1:
             imgs = soup.find_all(
                 'img', {'class': 'ProductImg-product'})
-            ret_val = 'http:' + imgs[random.randint(0, len(imgs))].get('src')
-        return ret_val
+            return 'http:' + imgs[random.randint(0, len(imgs))].get('src')
+        return None
 
     def get_processing_message(self, soup, mode):
         if mode is 0:
@@ -314,7 +313,7 @@ class VapeNaysh:
                     'div').find('p').find('span').getText()
         elif mode is 1:
             pass
-        return ''
+        return 'ERROR'
 
     def get_about(self, soup, mode):
         if mode is 0:
@@ -322,14 +321,14 @@ class VapeNaysh:
                 'div', {'id': 'about-description'}).getText().strip()
         elif mode is 1:
             pass
-        return ''
+        return 'ERROR'
 
     def get_contact(self, soup, mode):
         if mode is 0:
             pass
         elif mode is 1:
             pass
-        return ''
+        return 'ERROR'
 
     def get_logo(self, soup, mode):
         if mode is 0:
@@ -337,7 +336,7 @@ class VapeNaysh:
                 'a', {'id': 'logo'}).find('img').get('src')
         elif mode is 1:
             pass
-        return ''
+        return None
 
 
 def setup(bot):
