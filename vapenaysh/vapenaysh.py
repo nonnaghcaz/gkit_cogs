@@ -27,7 +27,7 @@ from .utils import checks
 try:
     # check if BeautifulSoup4 is installed
     from bs4 import BeautifulSoup
-    soupAvailable = True
+    soupAvailable = False
 except ValueError:
     soupAvailable = False
 
