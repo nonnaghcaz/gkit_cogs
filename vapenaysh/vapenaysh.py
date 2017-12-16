@@ -69,7 +69,7 @@ class VapeNaysh:
         if not color:
             await self.bot.say(
                 'Available color aliases:\n' +
-                json.dumps(VALID_COLOR_STRINGS, indent=2))
+                '\n\t-'.join(VALID_COLOR_STRINGS.keys()))
         else:
             if color[0] is '#' and len(color) is 7:
                 self.embed_color = int('0x' + color[1:], 16)
