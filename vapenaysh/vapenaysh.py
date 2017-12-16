@@ -335,7 +335,9 @@ class VapeNaysh:
             return 'https:' + soup.find(
                 'a', {'id': 'logo'}).find('img').get('src')
         elif mode is 1:
-            pass
+            return 'https:' + soup.find('div', {
+                'id': 'shopify-section-index-banner-image'}).find(
+                    'div').get('data-img-src')
         return None
 
 
