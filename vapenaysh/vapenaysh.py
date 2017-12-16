@@ -120,7 +120,8 @@ class VapeNaysh:
                         'meta', {'itemprop': 'ratingValue'}).get(
                             'content')))
         elif mode is 1:
-            return int(float(soup.find('meta', {'itemprop': 'ratingValue'})))
+            return int(float(soup.find(
+                'meta', {'itemprop': 'ratingValue'}).get('content')))
         return -1
 
     def get_reviews(self, soup, mode):
