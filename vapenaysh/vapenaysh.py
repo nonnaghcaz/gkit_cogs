@@ -357,6 +357,10 @@ class VapeNaysh:
         return None
 
     def get_random(self, arr):
+        if len(arr) is 1:
+            return arr[0]
+        elif len(arr) is 0:
+            return None
         return arr[random.randint(0, len(arr) - 1)]
 
 
