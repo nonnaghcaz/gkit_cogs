@@ -27,7 +27,7 @@ from .utils import checks
 try:
     # check if BeautifulSoup4 is installed
     from bs4 import BeautifulSoup
-    soupAvailable = False
+    soupAvailable = True
 except ValueError:
     soupAvailable = False
 
@@ -60,7 +60,6 @@ class VapeNaysh:
     async def vape(self, context=None):
         if not soupAvailable:
             await self.bot.say('Sorry, you need BeautifulSoup4 installed.')
-        # await self.bot.say('Type `[p]help vape` for info.')
         await self.bot.send_cmd_help(context)
 
     @vape.command(name='color', pass_context=True, hidden=True)

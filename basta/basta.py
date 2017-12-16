@@ -15,9 +15,10 @@ class BASTA:
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.group(name='basta', invoke_without_command=True)
-    async def basta(self):
-        await self.bot.say("Type `[p]help basta` for info.")
+    @commands.group(
+        name='basta', pass_context=True, invoke_without_command=True)
+    async def basta(self, context=None):
+        await self.bot.send_cmd_help(context)
 
     @basta.command(name='user', pass_context=True)
     async def user(self, context, user: discord.Member=None):

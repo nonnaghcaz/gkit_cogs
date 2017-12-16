@@ -32,11 +32,11 @@ class ArkAdvisor:
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.group(name='ark', invoke_without_command=True)
-    async def ark(self):
+    @commands.group(name='ark', pass_context=True, invoke_without_command=True)
+    async def ark(self, context=None):
         if not soupAvailable:
             await self.bot.say('Sorry, you need BeautifulSoup4 installed.')
-        await self.bot.say('Type `[p]help ark` for info.')
+        await self.bot.send_cmd_help(context)
 
     @ark.command(name='test', pass_context=True, hidden=True)
     @checks.serverowner_or_permissions(administrator=True)

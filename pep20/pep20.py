@@ -33,9 +33,10 @@ class BDFL:
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.group(name='bdfl', invoke_without_command=True)
-    async def bdfl(self):
-        await self.bot.say("Type `[p]help bdfl` for info.")
+    @commands.group(
+        name='bdfl', pass_context=True, invoke_without_command=True)
+    async def bdfl(self, context=None):
+        await self.bot.send_cmd_help(context)
 
     @bdfl.command(name='preach', pass_context=True)
     async def preach(self, context):
