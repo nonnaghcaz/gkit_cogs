@@ -76,11 +76,11 @@ class ArkAdvisor:
                         title = str(soup.title)[
                             len('<title>'):-len('</title>')]
 
-                        print('*' * 72 + '\n\n')
+                        print('\n\n' + '*' * 72 + '\n\n')
                         print('Title:  \t' + title)
                         print('Method: \t' + method)
                         print('Kibble: \t' + kibble)
-                        print('*' * 72 + '\n\n')
+                        print('\n\n' + '*' * 72 + '\n\n')
 
                         embed = discord.Embed(
                             colour=0x6441A4,
@@ -121,9 +121,6 @@ class ArkAdvisor:
                     pass
         return found
 
-    def get_description(self, soup):
-        return soup.find('div', {'id': 'full_description'}).find('p').getText()
-
     def get_method(self, soup):
         try:
             ret_val = soup.find(
@@ -137,7 +134,7 @@ class ArkAdvisor:
     def get_kibble(self, soup):
         try:
             ret_val = soup.find(
-                'a', {'href': re.compile('/Kibble ')}).get('title')
+                'a', {'href': re.compile('/Kibble \(')}).getText()
         except Exception:
             ret_val = 'ERROR'
         return ret_val
