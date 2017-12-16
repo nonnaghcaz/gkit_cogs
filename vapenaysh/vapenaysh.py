@@ -36,6 +36,14 @@ import random
 
 DEFAULT_COLOR = 0x6441A4
 
+VALID_COLOR_STRINGS = {
+    'TWITCH PURPLE': 0x6441A4,
+    'HOTLINE MIAMI PINK': 0xF765b8,
+    'HOTLINE MIAMI CYAN': 0x27FDF5,
+    'ZELDA PURPLE': 0xBD70D2,
+    'LINK GREEN': 0x027c23
+}
+
 
 class VapeNayshError(Exception):
     pass
@@ -71,6 +79,8 @@ class VapeNaysh:
                 int(color) > 0 and
                 int(color, 16) <= 0xFFFFFF):
             self.embed_color = int(color)
+        elif color.upper() in VALID_COLOR_STRINGS.keys():
+            self.embed_color = VALID_COLOR_STRINGS[color.upper()]
         else:
             self.embed_color = DEFAULT_COLOR
 
