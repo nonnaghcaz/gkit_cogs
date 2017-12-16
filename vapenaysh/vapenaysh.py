@@ -35,7 +35,6 @@ import aiohttp
 import random
 
 DEFAULT_COLOR = 0x6441A4
-COLOR = DEFAULT_COLOR
 
 
 class VapeNayshError(Exception):
@@ -46,6 +45,7 @@ class VapeNaysh:
 
     def __init__(self, bot):
         self.bot = bot
+        self.embed_color = DEFAULT_COLOR
 
     @commands.group(name='vape', pass_context=True)
     async def vape(self, context):
@@ -58,24 +58,24 @@ class VapeNaysh:
     @checks.serverowner_or_permissions(administrator=True)
     async def set_color(self, context, *, color: str):
         if color[0] is '#' and len(color) is 7:
-            COLOR = int('0x' + color[1:], 16)
+            self.embed_color = int('0x' + color[1:], 16)
         elif color[0:2].upper() in '0X':
-            COLOR = int(color, 16)
+            self.embed_color = int(color, 16)
         elif (
                 len(color.split(' ')) is 3 and
                 all([len(x) <= 3 for x in color.split(' ')])):
             # convert rgb triple to hex
             pass
         elif int(color) > 0 and int(color, 16) <= 0xFFFFFF:
-            COLOR = int(color)
+            self.embed_color = int(color)
         else:
-            COLOR = DEFAULT_COLOR
+            self.embed_color = DEFAULT_COLOR
 
-        embed = discord.Embed(colour=COLOR)
+        embed = discord.Embed(colour=self.embed_color)
         embed.add_field(
             name='Color changed!', value=(
                 context.message.author.mention +
-                ' changed the embed color to {}'.format(COLOR)))
+                ' changed the embed color to {}'.format(self.embed_color)))
         await self.bot.say(embed=embed)
 
     @vape.command(
@@ -137,7 +137,8 @@ class VapeNaysh:
                         name = self.get_name(soup, mode)
                         name_str = '_**' + name + '**_ ' + tag
 
-                        embed = discord.Embed(colour=COLOR, title=name_str)
+                        embed = discord.Embed(
+                            colour=self.embed_color, title=name_str)
                         embed.set_thumbnail(url=img_url)
                         embed.add_field(
                             name='Buy', value=url)
