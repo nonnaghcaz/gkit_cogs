@@ -73,6 +73,7 @@ class ArkAdvisor:
                         kibble = self.get_kibble(soup)
                         img_url = self.get_dossier_image(soup)
                         method = self.get_method(soup)
+
                         title_s = len('<title>')
                         title_e = len(
                             ' - Official ARK: Survival Evolved Wiki</title>')
@@ -84,15 +85,20 @@ class ArkAdvisor:
                         print('Kibble: \t' + kibble)
                         print('\n\n' + '*' * 72 + '\n\n')
 
-                        embed = discord.Embed(
-                            colour=0x6441A4,
-                            title=title)
-                        embed.set_thumbnail(url=img_url)
-                        embed.add_field(
-                            name='Taming Method', value=method)
-                        embed.add_field(
-                            name='Preferred Kibble', value=kibble)
-                        await self.bot.say(embed=embed)
+                        if method and kibble and img_url:
+                            embed = discord.Embed(
+                                colour=0x6441A4,
+                                title=title)
+                            embed.set_thumbnail(url=img_url)
+                            embed.add_field(
+                                name='Taming Method', value=method)
+                            embed.add_field(
+                                name='Preferred Kibble', value=kibble)
+                            await self.bot.say(embed=embed)
+                        else:
+                            await self.bot.say(
+                                'Sorry, {} is not tamable.'.format(
+                                    dino.title()))
                     else:
                         await self.bot.say(
                             'Sorry, could not find your dino: {}'.format(
@@ -130,7 +136,7 @@ class ArkAdvisor:
                     'title': 'Taming', 'href': re.compile(
                         '/Taming#')}).getText()
         except Exception:
-            ret_val = 'ERROR'
+            ret_val = None
         return ret_val
 
     def get_kibble(self, soup):
@@ -138,7 +144,7 @@ class ArkAdvisor:
             ret_val = soup.find(
                 'a', {'href': re.compile('/Kibble\w+')}).getText()
         except Exception:
-            ret_val = 'ERROR'
+            ret_val = None
         return ret_val
 
     def get_kibble_image(self, soup):
@@ -147,7 +153,7 @@ class ArkAdvisor:
                 'a', {'href': re.compile('/File:Kibble')}).find('img').get(
                     'src')
         except Exception:
-            ret_val = 'ERROR'
+            ret_val = None
         return ret_val
 
     def get_dossier_image(self, soup):
@@ -156,7 +162,7 @@ class ArkAdvisor:
                 'a', {'href': re.compile('/File:Dossier_')}).find('img').get(
                     'src')
         except Exception:
-            ret_val = 'ERROR'
+            ret_val = None
         return ret_val
 
 
