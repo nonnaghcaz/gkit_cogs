@@ -100,11 +100,17 @@ class VapeNaysh:
         name='bdv', aliases=['bluedot', 'bluedotvapors'])
     async def bdv(self, *, flavor: str):
         """Search for a flavor on Blue Dot Vapor's website."""
+
+        # DEBUG
+        print('\n\n' + '*' * 72 + '\n\n')
+        print('[vape.bdv] flavor: {}'.format(flavor))
+        print('\n\n' + '*' * 72 + '\n\n')
+
         if flavor.upper() in 'ABOUT':
             pass
         elif flavor.upper() in 'CONTACT':
             pass
-        elif flavor.upper() in ['SHIPPING', 'SHIP', 'PROCESSING']:
+        elif flavor.upper() in 'SHIPPING':
             url = 'https://www.bluedotvapors.com/'
             ship_str = ''
             async with aiohttp.ClientSession() as session:
