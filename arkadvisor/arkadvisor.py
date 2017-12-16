@@ -104,7 +104,7 @@ class ArkAdvisor:
                             'Sorry, could not find your dino: {}'.format(
                                 dino))
 
-    @ark.group(name='cheat')
+    @ark.group(name='cheat', invoke_without_command=True)
     async def cheat(self):
         pass
 
