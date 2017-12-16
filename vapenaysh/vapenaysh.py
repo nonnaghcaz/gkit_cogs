@@ -127,14 +127,14 @@ class VapeNaysh:
 
     def get_reviews(self, soup, mode):
         if mode is 0:
-            return soup.find(
+            return int(soup.find(
                 'div', {'itemprop': 'aggregateRating'}).find(
                     'span').find(
-                        'meta', {'itemprop': 'reviewCount'}).get('content')
+                        'meta', {'itemprop': 'reviewCount'}).get('content'))
         elif mode is 1:
-            return soup.find('meta', {
-                'itemprop': 'reviewCount'}).get('content')
-        return ''
+            return int(soup.find('meta', {
+                'itemprop': 'reviewCount'}).get('content'))
+        return -1
 
     def get_name(self, soup, mode):
         if mode is 0 or mode is 1:
