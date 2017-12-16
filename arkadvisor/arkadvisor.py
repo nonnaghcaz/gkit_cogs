@@ -150,11 +150,11 @@ class ArkAdvisor:
             ret_val = 'ERROR'
         return ret_val
 
-    def get_dossier_image(self, dino, soup):
+    def get_dossier_image(self, soup):
         try:
             ret_val = soup.find(
-                'a', {'href': ('/File:Dossier_' + dino.title().replace(
-                    ' ', '_'))}).find('img').get('src')
+                'a', {'href': re.compile('/File:Dossier_')}).find('img').get(
+                    'src')
         except Exception:
             ret_val = 'ERROR'
         return ret_val
