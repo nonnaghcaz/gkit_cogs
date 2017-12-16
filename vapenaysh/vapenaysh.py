@@ -53,9 +53,9 @@ class VapeNaysh:
         if context.invoked_subcommand is None:
             await self.bot.say('Type `[p]help vape` for info.')
 
-    @vape.command(name='color')
+    @vape.command(name='color', pass_context=True)
     @checks.serverowner_or_permissions(administrator=True)
-    async def set_color(self, *, color: str):
+    async def set_color(self, context, *, color: str):
         if color[0] is '#' and len(color) is 7:
             COLOR = '0x' + color[1:]
         elif color[0:2].upper() in '0X':
@@ -67,6 +67,10 @@ class VapeNaysh:
             pass
         else:
             COLOR = 0x6441A4
+
+        await self.bot.say(
+            context.autor.mention +
+            ' changed the embed color to {}'.format(COLOR))
 
     @vape.command(
         name='bdv', aliases=['bluedot', 'bluedotvapors'])
