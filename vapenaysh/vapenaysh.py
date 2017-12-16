@@ -312,7 +312,15 @@ class VapeNaysh:
                 'div', {'id': 'welcome-text'}).find(
                     'div').find('p').find('span').getText()
         elif mode is 1:
-            pass
+            # This is located in a blog post and, honestly, I'm too lazy to do
+            # multiple soups and parse through text.
+            # See:
+            #   https://whitelabeljuiceco.com/blogs/news/frequently-asked-questions
+            return (
+                'We reserve up to 5 business days for your order to leave the '
+                'warehouse but we do our best to make sure orders are sent '
+                'out within 24-48 hours. Orders are fulfilled in the order '
+                'in which they are received.')
         return 'ERROR'
 
     def get_about(self, soup, mode):
@@ -335,10 +343,20 @@ class VapeNaysh:
             return 'https:' + soup.find(
                 'a', {'id': 'logo'}).find('img').get('src')
         elif mode is 1:
-            return 'https:' + soup.find('div', {
-                'id': 'shopify-section-index-banner-image'}).find(
-                    'div').get('data-img-src')
+            # return 'https:' + soup.find('div', {
+            #     'id': 'shopify-section-index-banner-image'}).find(
+            #         'div').get('data-img-src')
+            index_s = len('background-image: url(/')
+            index_e = len(');')
+            imgs = soup.find(
+                'div', {'id': 'Instafeed-index-instagram'}).find_all(
+                    'a')
+        return 'https:' + self.get_random([
+            x[index_s:-index_e] for x in imgs.get('style')])
         return None
+
+    def get_random(self, arr):
+        return arr[random.randint(0, len(arr))]
 
 
 def setup(bot):
