@@ -64,32 +64,37 @@ class VapeNaysh:
 
     @vape.command(name='color', pass_context=True, hidden=True)
     @checks.serverowner_or_permissions(administrator=True)
-    async def set_color(self, context, *, color: str):
-        if color[0] is '#' and len(color) is 7:
-            self.embed_color = int('0x' + color[1:], 16)
-        elif color[0:2].upper() in '0X':
-            self.embed_color = int(color, 16)
-        elif (
-                len(color.split(' ')) is 3 and
-                all([len(x) <= 3 for x in color.split(' ')])):
-            # convert rgb triple to hex
-            pass
-        elif (
-                color.isnumeric() and
-                int(color) > 0 and
-                int(color, 16) <= 0xFFFFFF):
-            self.embed_color = int(color)
-        elif color.upper() in VALID_COLOR_STRINGS.keys():
-            self.embed_color = VALID_COLOR_STRINGS[color.upper()]
+    async def set_color(self, context, *, color: str=None):
+        if not color:
+            await self.bot.say(
+                'Available color aliases:\n' +
+                VALID_COLOR_STRINGS)
         else:
-            self.embed_color = DEFAULT_COLOR
+            if color[0] is '#' and len(color) is 7:
+                self.embed_color = int('0x' + color[1:], 16)
+            elif color[0:2].upper() in '0X':
+                self.embed_color = int(color, 16)
+            elif (
+                    len(color.split(' ')) is 3 and
+                    all([len(x) <= 3 for x in color.split(' ')])):
+                # convert rgb triple to hex
+                pass
+            elif (
+                    color.isnumeric() and
+                    int(color) > 0 and
+                    int(color, 16) <= 0xFFFFFF):
+                self.embed_color = int(color)
+            elif color.upper() in VALID_COLOR_STRINGS.keys():
+                self.embed_color = VALID_COLOR_STRINGS[color.upper()]
+            else:
+                self.embed_color = DEFAULT_COLOR
 
-        embed = discord.Embed(colour=self.embed_color)
-        embed.add_field(
-            name='Color changed!', value=(
-                context.message.author.mention +
-                ' changed the embed color to {}'.format(self.embed_color)))
-        await self.bot.say(embed=embed)
+            embed = discord.Embed(colour=self.embed_color)
+            embed.add_field(
+                name='Color changed!', value=(
+                    context.message.author.mention +
+                    ' changed the embed color to {}'.format(self.embed_color)))
+            await self.bot.say(embed=embed)
 
     @vape.command(
         name='bdv', aliases=['bluedot', 'bluedotvapors'])
