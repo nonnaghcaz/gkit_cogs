@@ -104,6 +104,54 @@ class ArkAdvisor:
                             'Sorry, could not find your dino: {}'.format(
                                 dino))
 
+    @ark.group(name='cheat')
+    async def cheat(self):
+        pass
+
+    @cheat.command(name='give', aliases=['giveitem', 'giveitemnum'])
+    async def give(self, *, params: str=None):
+        """Build a cheat string to give a player an item."""
+        # TODO: Think about how to incorporate mod items w/o BP path
+        if not params:
+            await self.bot.say(
+                'Sorry, the following parameter structures were expected:\n'
+                '\t<BlueprintPath> <Quantity> <Quality> <ForceBlueprint>\n'
+                'OR\n'
+                '\t<ItemNum> <Quantity> <Quality> <ForceBlueprint>')
+        else:
+            # Parse params string by:
+            #   1. Pipe (|): Aligns with ARK's method of command separation
+            #   2. Space ( ): Separates individual command params
+            #       NOTE: Must determine consistent method to handle multi-word
+            #       item names when parsing <item>, <quantity>, <quality>
+            pass
+
+    @cheat.command(name='spawn', aliases=['dospawn', 'spawndino'])
+    async def spawn(self, *, params: str=None):
+        """Build a cheat string to spawn a wild dino."""
+        if not params:
+            pass
+        else:
+            # Parse params string by:
+            #   1. Pipe (|): Aligns with ARK's method of command separation
+            #   2. Space ( ): Separates individual command params
+            #       NOTE: Must determine consistent method to handle multi-word
+            #       item names when parsing <item>, <quantity>, <quality>
+            pass
+
+    @cheat.command(name='summon', aliases=['dosummon', 'summondino'])
+    async def summon(self, *, params: str=None):
+        """Build a cheat string to summon a tamed dino or entity."""
+        if not params:
+            pass
+        else:
+            # Parse params string by:
+            #   1. Pipe (|): Aligns with ARK's method of command separation
+            #   2. Space ( ): Separates individual command params
+            #       NOTE: Must determine consistent method to handle multi-word
+            #       item names when parsing <item>, <quantity>, <quality>
+            pass
+
     async def check_dino_is_tamable(self, dino):
         found = False
 

@@ -23,7 +23,6 @@ import discord
 from discord.ext import commands
 
 from .utils import checks
-import json
 
 try:
     # check if BeautifulSoup4 is installed
