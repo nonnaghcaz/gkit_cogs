@@ -89,7 +89,7 @@ class VapeNaysh:
 
                         img_url = 'http:' + self.get_image(soup, mode)
 
-                        if rating >= 4:
+                        if rating >= 4 and reviews > 10:
                             tag = ':boom:'
                         elif rating < 3:
                             tag = ':zzz:'
