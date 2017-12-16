@@ -53,13 +53,13 @@ class VapeNaysh:
         if context.invoked_subcommand is None:
             await self.bot.say('Type `[p]help vape` for info.')
 
-    @vape.command(name='color', pass_context=True)
+    @vape.command(name='color', pass_context=True, hidden=True)
     @checks.serverowner_or_permissions(administrator=True)
     async def set_color(self, context, *, color: str):
         if color[0] is '#' and len(color) is 7:
-            COLOR = '0x' + color[1:]
+            COLOR = int('0x' + color[1:], 16)
         elif color[0:2].upper() in '0X':
-            COLOR = color
+            COLOR = int(color, 16)
         elif (
                 len(color.split(' ')) is 3 and
                 all([len(x) <= 3 for x in color.split(' ')])):
