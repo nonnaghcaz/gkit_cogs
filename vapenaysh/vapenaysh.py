@@ -51,11 +51,11 @@ class VapeNaysh:
     @vape.command(
         name='bdv', aliases=['bluedot', 'bluedotvapors'])
     async def bdv(self, *, flavor: str):
-        self.get_flavor(flavor, 0)
+        await self.get_flavor(flavor, 0)
 
     @vape.command(name='wlj', aliases=['whitelabel', 'whitelabeljuiceco'])
     async def wlj(self, *, flavor: str):
-        self.get_flavor(flavor, 1)
+        await self.get_flavor(flavor, 1)
 
     async def get_flavor(self, flavor, mode):
         if not flavor:
