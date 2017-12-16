@@ -69,7 +69,7 @@ class VapeNaysh:
             COLOR = 0x6441A4
 
         await self.bot.say(
-            context.autor.mention +
+            context.message.author.mention +
             ' changed the embed color to {}'.format(COLOR))
 
     @vape.command(
