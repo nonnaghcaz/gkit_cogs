@@ -349,7 +349,7 @@ class VapeNaysh:
                 'a', {'id': 'logo'}).find('img').get('src')
         elif mode is 1:
             imgs = soup.find_all(
-                'a', {'style': re.compile('background-image: url')})
+                'a', {'style': re.compile('background-image: url\w+')})
             if imgs:
                 index_s = len('background-image: url(/')
                 index_e = len(');')
