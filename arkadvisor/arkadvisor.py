@@ -80,6 +80,7 @@ class ArkAdvisor:
                         print('Title:  \t' + title)
                         print('Method: \t' + method)
                         print('Kibble: \t' + kibble)
+                        print('*' * 72 + '\n\n')
 
                         embed = discord.Embed(
                             colour=0x9933FF,
@@ -136,7 +137,7 @@ class ArkAdvisor:
     def get_kibble(self, soup):
         try:
             ret_val = soup.find(
-                'a', {'href': re.compile('/Kibble \(')}).get('title')
+                'a', {'href': re.compile('/Kibble ')}).get('title')
         except Exception:
             ret_val = 'ERROR'
         return ret_val
