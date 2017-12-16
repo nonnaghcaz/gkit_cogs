@@ -112,14 +112,14 @@ class VapeNaysh:
             pass
         elif flavor.upper() in ['SHIP', 'SHIPPING', 'PROCESSING']:
             url = 'https://www.bluedotvapors.com/'
-            ship_str = ''
+            ship_str = 'ERROR'
             async with aiohttp.ClientSession() as session:
                 async with session.get(url) as response:
                     if response.status is 200:
                         data = await response.text()
                         soup = BeautifulSoup(data, 'html.parser')
-                        ship_str = self.get_shipping(soup, 0)
-            await self.bot.say(ship_str)
+                        ship_str = self.get_processing_message(soup, 0)
+            await self.bot.say('[PROCESSING] Blue Dot Vapors: ' + ship_str)
         else:
             await self.get_flavor(flavor, 0)
 
@@ -237,7 +237,7 @@ class VapeNaysh:
             return imgs[random.randint(0, len(imgs))].get('src')
         return ''
 
-    def get_shipping(self, soup, mode):
+    def get_processing_message(self, soup, mode):
         if mode is 0:
             return soup.find(
                 'div', {'id': 'welcome-text'}).find(
