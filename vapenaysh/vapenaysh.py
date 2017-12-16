@@ -30,6 +30,7 @@ except ValueError:
     soupAvailable = False
 
 import aiohttp
+import random
 
 
 class VapeNayshError(Exception):
@@ -153,7 +154,9 @@ class VapeNaysh:
         if mode is 0:
             return soup.find('img', {'id': 'productPhotoImg'}).get('src')
         elif mode is 1:
-            return soup.find('img').get('src')
+            imgs = soup.find_all(
+                'img', {'class': 'ProductImg-product'})
+            return imgs[random.randint(0, len(imgs))].get('src')
         return ''
 
 
