@@ -348,9 +348,9 @@ class VapeNaysh:
             return 'https:' + soup.find(
                 'a', {'id': 'logo'}).find('img').get('src')
         elif mode is 1:
-            imgs = soup.find_all(
+            imgs = [soup.find(
                 'a', {
-                    'href': re.compile('https://www.instagram.com/p/\w+/')})
+                    'href': re.compile('https://www.instagram.com/p')})]
             if imgs:
                 index_s = len('background-image: url(/')
                 index_e = len(');')
