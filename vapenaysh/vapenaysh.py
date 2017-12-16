@@ -85,51 +85,12 @@ class VapeNaysh:
 
         await self.handle_get_flavor_request(flavor, mode)
 
-    @vape.command(name='about', pass_context=True)
-    async def about(self, context, *, mode: str):
+    @vape.command(name='about')
+    async def about(self, *, mode: str):
         """Display information about the specified eliquid vendor."""
         if not mode:
             pass
-        # Convert mode to int representation
-        #   - BDV: 0
-        #   - WLJ: 1
-        await self.say_about(mode)
-
-    async def say_about(self, mode):
-        ship_str = 'ERROR'
-        about_str = 'ERROR'
-        img_url = ''
-
-        if mode is 0:
-            url = 'https://www.bluedotvapors.com/'
-        elif mode is 1:
-            url = ''
-
-        async with aiohttp.ClientSession() as session:
-            async with session.get(url) as response:
-                if response.status is 200:
-                    data = await response.text()
-                    soup = BeautifulSoup(data, 'html.parser')
-                    ship_str = self.get_processing_message(soup, mode)
-                    about_str = self.get_about(soup, mode)
-                    img_url = self.get_logo(soup, mode)
-
-                    # DEBUG
-                    print('\n\n' + '*' * 72 + '\n\n')
-                    print('[vape.bdv] ship_str:\n\t{}'.format(ship_str))
-                    print('[vape.bdv] about_str:\n\t{}'.format(about_str))
-                    print('[vape.bdv] img_url:\n\t{}'.format(img_url))
-                    print('\n\n' + '*' * 72 + '\n\n')
-
-                embed = discord.Embed(
-                    colour=self.embed_color, title='Blue Dot Vapors')
-                if img_url:
-                    embed.set_image(url=img_url)
-                embed.add_field(name='Website', value=url)
-                embed.add_field(name='Processing', value=ship_str)
-                embed.add_field(name='About', value=about_str)
-
-                await self.bot.say(embed=embed)
+        await self.handle_say_about_request(mode)
 
 ###############################################################################
 # `vape` admin commands
@@ -170,7 +131,61 @@ class VapeNaysh:
             await self.bot.say(embed=embed)
 
 ###############################################################################
-# Helper methods
+# `vape.about` helper methods
+###############################################################################
+
+    async def handle_say_about_request(self, mode):
+        # Convert mode to int representation
+        #   - BDV: 0
+        #   - WLJ: 1
+
+        if mode.isnumeric():
+            mode = int(mode)
+        await self.say_about(mode)
+
+    async def say_about(self, mode):
+        ship_str = 'ERROR'
+        about_str = 'ERROR'
+        img_url = ''
+        url = ''
+        title = 'ERROR'
+
+        if mode is 0:
+            url = 'https://www.bluedotvapors.com/'
+            title = 'Blue Dot Vapors'
+        elif mode is 1:
+            url = 'https://whitelabeljuiceco.com/'
+            title = 'White Label Juice Co.'
+
+        async with aiohttp.ClientSession() as session:
+            async with session.get(url) as response:
+                if response.status is 200:
+                    data = await response.text()
+                    soup = BeautifulSoup(data, 'html.parser')
+                    ship_str = self.get_processing_message(soup, mode)
+                    about_str = self.get_about(soup, mode)
+                    img_url = self.get_logo(soup, mode)
+
+                    # DEBUG
+                    print('\n\n' + '*' * 72 + '\n\n')
+                    print('[vape.about] ship_str:\n\t{}'.format(ship_str))
+                    print('[vape.about] about_str:\n\t{}'.format(about_str))
+                    print('[vape.about] img_url:\n\t{}'.format(img_url))
+                    print('\n\n' + '*' * 72 + '\n\n')
+
+                embed = discord.Embed(
+                    colour=self.embed_color, title=title)
+                if img_url:
+                    embed.set_image(url=img_url)
+                embed.add_field(name='Website', value=url)
+                embed.add_field(name='Processing', value=ship_str)
+                embed.add_field(name='About', value=about_str)
+
+                await self.bot.say(embed=embed)
+
+
+###############################################################################
+# `vape.bdv` and `vape.wlj` helper methods
 ###############################################################################
 
     async def handle_get_flavor_request(self, flavor, mode):
