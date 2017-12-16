@@ -66,7 +66,7 @@ class VapeNaysh:
                 all([len(x) <= 3 for x in color.split(' ')])):
             # convert rgb triple to hex
             pass
-        elif int(color) > 0:
+        elif int(color) > 0 and int(color, 16) <= 0xFFFFFF:
             COLOR = int(color)
         else:
             COLOR = DEFAULT_COLOR
