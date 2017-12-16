@@ -182,7 +182,7 @@ class VapeNaysh:
                         reviews = self.get_reviews(soup, mode)
                         reviews_str = ' _**~' + str(reviews) + ' reviews**_'
 
-                        img_url = 'http:' + self.get_image(soup, mode)
+                        img_url = self.get_image(soup, mode)
 
                         if rating >= 4 and reviews > 10:
                             tag = ':boom:'
@@ -247,13 +247,15 @@ class VapeNaysh:
         return ''
 
     def get_image(self, soup, mode):
+        ret_val = ''
         if mode is 0:
-            return soup.find('img', {'id': 'productPhotoImg'}).get('src')
+            ret_val = 'http:' + soup.find(
+                'img', {'id': 'productPhotoImg'}).get('src')
         elif mode is 1:
             imgs = soup.find_all(
                 'img', {'class': 'ProductImg-product'})
-            return imgs[random.randint(0, len(imgs))].get('src')
-        return ''
+            ret_val = 'http:' + imgs[random.randint(0, len(imgs))].get('src')
+        return ret_val
 
     def get_processing_message(self, soup, mode):
         if mode is 0:
@@ -281,7 +283,7 @@ class VapeNaysh:
 
     def get_logo(self, soup, mode):
         if mode is 0:
-            return soup.find('a', {'id': 'logo'}).find('img').get('src')
+            return 'https:' + soup.find('a', {'id': 'logo'}).find('img').get('src')
         elif mode is 1:
             pass
         return ''
