@@ -349,13 +349,18 @@ class VapeNaysh:
                 'a', {'id': 'logo'}).find('img').get('src')
         elif mode is 1:
             insta_feed = soup.find('div', {'id': 'Instafeed-index-instagram'})
-            imgs = insta_feed.find_all('a')
-            print('token: ' + str(insta_feed.get('data-access-token')))
+            imgs = insta_feed.findChildren()
             if imgs:
                 index_s = len('background-image: url(/')
                 index_e = len(');')
-                return 'https:' + self.get_random([
-                    x.get('style')[index_s:-index_e] for x in imgs])
+                arr = []
+                for img in imgs:
+                    try:
+                        arr += img.get('style')[index_s:-index_e]
+                    except Exception:
+                        pass
+                return 'https:' + self.get_random(arr)
+                # [x.get('style')[index_s:-index_e] for x in imgs])
             else:
                 return 'https:' + soup.find('div', {
                     'id': 'shopify-section-index-banner-image'}).find(
