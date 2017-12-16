@@ -110,7 +110,7 @@ class VapeNaysh:
             pass
         elif flavor.upper() in 'CONTACT':
             pass
-        elif flavor.upper() in 'SHIPPING':
+        elif flavor.upper() in ['SHIP', 'SHIPPING', 'PROCESSING']:
             url = 'https://www.bluedotvapors.com/'
             ship_str = ''
             async with aiohttp.ClientSession() as session:
