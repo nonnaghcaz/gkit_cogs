@@ -68,7 +68,7 @@ class VapeNaysh:
     async def set_color(self, context, *, color: str=None):
         if not color:
             await self.bot.say(
-                'Available color aliases:\n' +
+                'Available color aliases:\n\n\t-' +
                 '\n\t-'.join(VALID_COLOR_STRINGS.keys()))
         else:
             if color[0] is '#' and len(color) is 7:
