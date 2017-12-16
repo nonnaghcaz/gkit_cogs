@@ -178,9 +178,12 @@ class VapeNaysh:
                     colour=self.embed_color, title=title)
                 if img_url:
                     embed.set_image(url=img_url)
-                embed.add_field(name='Website', value=url)
-                embed.add_field(name='Processing', value=ship_str)
-                embed.add_field(name='About', value=about_str)
+                if url:
+                    embed.add_field(name='Website', value=url)
+                if ship_str:
+                    embed.add_field(name='Processing', value=ship_str)
+                if about_str:
+                    embed.add_field(name='About', value=about_str)
 
                 await self.bot.say(embed=embed)
 
@@ -286,7 +289,7 @@ class VapeNaysh:
     def get_name(self, soup, mode):
         if mode is 0 or mode is 1:
             return soup.find('h1', {'itemprop': 'name'}).getText()
-        return 'ERROR'
+        return '---'
 
     def get_description(self, soup, mode):
         if mode is 0:
@@ -295,7 +298,7 @@ class VapeNaysh:
         elif mode is 1:
             return soup.find('div', {
                 'itemprop': 'description'}).find('p').getText()
-        return 'ERROR'
+        return ''
 
     def get_image(self, soup, mode):
         if mode is 0:
@@ -323,7 +326,7 @@ class VapeNaysh:
                 'warehouse but we do our best to make sure orders are sent '
                 'out within 24-48 hours. Orders are fulfilled in the order '
                 'in which they are received.')
-        return 'ERROR'
+        return ''
 
     def get_about(self, soup, mode):
         if mode is 0:
@@ -331,14 +334,14 @@ class VapeNaysh:
                 'div', {'id': 'about-description'}).getText().strip()
         elif mode is 1:
             pass
-        return 'ERROR'
+        return ''
 
     def get_contact(self, soup, mode):
         if mode is 0:
             pass
         elif mode is 1:
             pass
-        return 'ERROR'
+        return ''
 
     def get_logo(self, soup, mode):
         if mode is 0:
