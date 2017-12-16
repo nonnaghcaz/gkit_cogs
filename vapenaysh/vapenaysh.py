@@ -95,7 +95,7 @@ class VapeNaysh:
                         else:
                             tag = ''
 
-                        name = self.get_name(soup)
+                        name = self.get_name(soup, mode)
                         name_str = '_**' + name + '**_ ' + tag
 
                         embed = discord.Embed(colour=0x6441A4, title=name_str)
