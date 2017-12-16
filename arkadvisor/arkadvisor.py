@@ -71,7 +71,7 @@ class ArkAdvisor:
                         soup = BeautifulSoup(data, 'html.parser')
 
                         kibble = self.get_kibble(soup)
-                        img_url = self.get_kibble_image(soup)
+                        img_url = self.get_dossier_image(soup)
                         method = self.get_method(soup)
                         title = str(soup.title)[
                             len('<title>'):-len('</title>')]
@@ -136,7 +136,7 @@ class ArkAdvisor:
     def get_kibble(self, soup):
         try:
             ret_val = soup.find(
-                'a', {'href': re.compile('/Kibble (')}).get('title')
+                'a', {'href': re.compile('/Kibble \(')}).get('title')
         except Exception:
             ret_val = 'ERROR'
         return ret_val
