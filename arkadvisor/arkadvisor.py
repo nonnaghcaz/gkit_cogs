@@ -32,7 +32,7 @@ class ArkAdvisor:
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.group(name='ark', pass_context=True)
+    @commands.group(name='ark', pass_context=True, invoke_without_command=True)
     async def ark(self, context):
         if not soupAvailable:
             await self.bot.say('Sorry, you need BeautifulSoup4 installed.')
