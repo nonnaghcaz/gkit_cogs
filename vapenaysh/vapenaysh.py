@@ -49,31 +49,44 @@ class VapeNaysh:
             await self.bot.say('Type `[p]help vape` for info.')
 
     @vape.command(
-        name='bdv', pass_context=True, aliases=['bluedot', 'bluedotvapors'])
-    async def bdv(self, context, *, flavor: str):
+        name='bdv', aliases=['bluedot', 'bluedotvapors'])
+    async def bdv(self, *, flavor: str):
+        self.get_flavor(flavor, 0)
+
+    @vape.command(name='wlj', aliases=['whitelabel', 'whitelabeljuiceco'])
+    async def wlj(self, *, flavor: str):
+        self.get_flavor(flavor, 1)
+
+    async def get_flavor(self, flavor, mode):
         if not flavor:
-            await self.bot.say("Type `[p]help vape bdv` for info.")
+            await self.bot.say("Type `[p]help vape wlj` for info.")
         else:
-            url = (
-                'https://www.bluedotvapors.com/' +
-                'collections/eliquid/products/' +
-                flavor.replace(' ', '-'))
+            if mode is 0:
+                url = (
+                    'https://www.bluedotvapors.com/' +
+                    'collections/eliquid/products/' +
+                    flavor.replace(' ', '-'))
+            elif mode is 1:
+                url = (
+                    'https://whitelabeljuiceco.com/' +
+                    'collections/whitelabel-juice/products/' +
+                    flavor.replace(' ', '-')) + '-100ml'
             async with aiohttp.ClientSession() as session:
                 async with session.get(url) as response:
                     if response.status is 200:
                         data = await response.text()
                         soup = BeautifulSoup(data, 'html.parser')
 
-                        description = self.get_description(soup)
-                        rating = self.get_rating(soup)
+                        description = self.get_description(soup, mode)
+                        rating = self.get_rating(soup, mode)
                         rating_str = (
                             (':fire:' * rating) +
                             (':heavy_multiplication_x:' * (5 - rating)))
 
-                        reviews = self.get_reviews(soup)
+                        reviews = self.get_reviews(soup, mode)
                         reviews_str = ' _**~' + str(reviews) + ' reviews**_'
 
-                        img_url = 'http:' + self.get_image(soup)
+                        img_url = 'http:' + self.get_image(soup, mode)
 
                         if rating >= 4:
                             tag = ':boom:'
@@ -99,27 +112,48 @@ class VapeNaysh:
                             'Sorry, could not find your flavor: {}'.format(
                                 flavor))
 
-    def get_rating(self, soup):
-        return int(float(soup.find(
-            'div', {'itemprop': 'aggregateRating'}).find(
-                'span').find(
-                    'meta', {'itemprop': 'ratingValue'}).get(
-                        'content')))
+    def get_rating(self, soup, mode):
+        if mode is 0:
+            return int(float(soup.find(
+                'div', {'itemprop': 'aggregateRating'}).find(
+                    'span').find(
+                        'meta', {'itemprop': 'ratingValue'}).get(
+                            'content')))
+        elif mode is 1:
+            return int(float(soup.find('meta', {'itemprop': 'ratingValue'})))
+        return -1
 
-    def get_reviews(self, soup):
-        return soup.find(
-            'div', {'itemprop': 'aggregateRating'}).find(
-                'span').find(
-                    'meta', {'itemprop': 'reviewCount'}).get('content')
+    def get_reviews(self, soup, mode):
+        if mode is 0:
+            return soup.find(
+                'div', {'itemprop': 'aggregateRating'}).find(
+                    'span').find(
+                        'meta', {'itemprop': 'reviewCount'}).get('content')
+        elif mode is 1:
+            return soup.find('meta', {
+                'itemprop': 'reviewCount'}).get('content')
+        return ''
 
-    def get_name(self, soup):
-        return soup.find('h1', {'itemprop': 'name'}).getText()
+    def get_name(self, soup, mode):
+        if mode is 0 or mode is 1:
+            return soup.find('h1', {'itemprop': 'name'}).getText()
+        return ''
 
-    def get_description(self, soup):
-        return soup.find('div', {'id': 'full_description'}).find('p').getText()
+    def get_description(self, soup, mode):
+        if mode is 0:
+            return soup.find('div', {
+                'id': 'full_description'}).find('p').getText()
+        elif mode is 1:
+            return soup.find('div', {
+                'itemprop': 'description'}).find('p').getText()
+        return ''
 
-    def get_image(self, soup):
-        return soup.find('img', {'id': 'productPhotoImg'}).get('src')
+    def get_image(self, soup, mode):
+        if mode is 0:
+            return soup.find('img', {'id': 'productPhotoImg'}).get('src')
+        elif mode is 1:
+            return soup.find('img').get('src')
+        return ''
 
 
 def setup(bot):
