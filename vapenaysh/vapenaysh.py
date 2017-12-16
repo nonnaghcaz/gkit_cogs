@@ -34,6 +34,7 @@ except ValueError:
 import aiohttp
 import random
 import re
+import pprint
 
 DEFAULT_COLOR = 0x6441A4
 
@@ -349,7 +350,8 @@ class VapeNaysh:
                 'a', {'id': 'logo'}).find('img').get('src')
         elif mode is 1:
             insta_feed = soup.find('div', {'id': 'Instafeed-index-instagram'})
-            imgs = insta_feed.findChildren()
+            imgs = insta_feed.find_all(True)
+            pprint.pprint(imgs)
             print('imgs len: ' + str(len(imgs)))
             if imgs:
                 index_s = len('background-image: url(/')
