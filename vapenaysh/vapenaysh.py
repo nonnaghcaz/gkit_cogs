@@ -356,7 +356,7 @@ class VapeNaysh:
         return None
 
     def get_random(self, arr):
-        return arr[random.randint(0, len(arr))]
+        return arr[random.randint(0, len(arr) - 1)]
 
 
 def setup(bot):
