@@ -55,12 +55,85 @@ class VapeNaysh:
         self.bot = bot
         self.embed_color = DEFAULT_COLOR
 
+###############################################################################
+# Root groups
+###############################################################################
+
     @commands.group(
         name='vape', pass_context=True, invoke_without_command=True)
     async def vape(self, context=None):
         if not soupAvailable:
             await self.bot.say('Sorry, you need BeautifulSoup4 installed.')
         await self.bot.send_cmd_help(context)
+
+###############################################################################
+# `vape` public commands
+###############################################################################
+
+    @vape.command(
+        name='bdv', aliases=['bluedot', 'bluedotvapors'])
+    async def bdv(self, *, flavor: str):
+        """Search for a flavor on Blue Dot Vapor's website."""
+        mode = 0
+
+        await self.handle_get_flavor_request(flavor, mode)
+
+    @vape.command(name='wlj', aliases=['whitelabel', 'whitelabeljuiceco'])
+    async def wlj(self, *, flavor: str):
+        """Search for a flavor on White Label Juice Co.'s website."""
+        mode = 1
+
+        await self.handle_get_flavor_request(flavor, mode)
+
+    @vape.command(name='about', pass_context=True)
+    async def about(self, context, *, mode: str):
+        """Display information about the specified eliquid vendor."""
+        if not mode:
+            pass
+        # Convert mode to int representation
+        #   - BDV: 0
+        #   - WLJ: 1
+        await self.say_about(mode)
+
+    async def say_about(self, mode):
+        ship_str = 'ERROR'
+        about_str = 'ERROR'
+        img_url = ''
+
+        if mode is 0:
+            url = 'https://www.bluedotvapors.com/'
+        elif mode is 1:
+            url = ''
+
+        async with aiohttp.ClientSession() as session:
+            async with session.get(url) as response:
+                if response.status is 200:
+                    data = await response.text()
+                    soup = BeautifulSoup(data, 'html.parser')
+                    ship_str = self.get_processing_message(soup, mode)
+                    about_str = self.get_about(soup, mode)
+                    img_url = self.get_logo(soup, mode)
+
+                    # DEBUG
+                    print('\n\n' + '*' * 72 + '\n\n')
+                    print('[vape.bdv] ship_str:\n\t{}'.format(ship_str))
+                    print('[vape.bdv] about_str:\n\t{}'.format(about_str))
+                    print('[vape.bdv] img_url:\n\t{}'.format(img_url))
+                    print('\n\n' + '*' * 72 + '\n\n')
+
+                embed = discord.Embed(
+                    colour=self.embed_color, title='Blue Dot Vapors')
+                if img_url:
+                    embed.set_image(url=img_url)
+                embed.add_field(name='Website', value=url)
+                embed.add_field(name='Processing', value=ship_str)
+                embed.add_field(name='About', value=about_str)
+
+                await self.bot.say(embed=embed)
+
+###############################################################################
+# `vape` admin commands
+###############################################################################
 
     @vape.command(name='color', pass_context=True, hidden=True)
     @checks.serverowner_or_permissions(administrator=True)
@@ -96,56 +169,17 @@ class VapeNaysh:
                     ' changed the embed color to {}'.format(self.embed_color)))
             await self.bot.say(embed=embed)
 
-    @vape.command(
-        name='bdv', aliases=['bluedot', 'bluedotvapors'])
-    async def bdv(self, *, flavor: str):
-        """Search for a flavor on Blue Dot Vapor's website."""
+###############################################################################
+# Helper methods
+###############################################################################
 
-        # DEBUG
-        print('\n\n' + '*' * 72 + '\n\n')
-        print('[vape.bdv] flavor:\n\t{}'.format(flavor))
-        print('\n\n' + '*' * 72 + '\n\n')
-
+    async def handle_get_flavor_request(self, flavor, mode):
         if flavor.upper() in 'CONTACT':
             pass
         elif flavor.upper() in ['ABOUT', 'SHIP', 'SHIPPING', 'PROCESSING']:
-            url = 'https://www.bluedotvapors.com/'
-            ship_str = 'ERROR'
-            about_str = 'ERROR'
-            img_url = ''
-
-            async with aiohttp.ClientSession() as session:
-                async with session.get(url) as response:
-                    if response.status is 200:
-                        data = await response.text()
-                        soup = BeautifulSoup(data, 'html.parser')
-                        ship_str = self.get_processing_message(soup, 0)
-                        about_str = self.get_about(soup, 0)
-                        img_url = self.get_logo(soup, 0)
-
-                        # DEBUG
-                        print('\n\n' + '*' * 72 + '\n\n')
-                        print('[vape.bdv] ship_str:\n\t{}'.format(ship_str))
-                        print('[vape.bdv] about_str:\n\t{}'.format(about_str))
-                        print('[vape.bdv] img_url:\n\t{}'.format(img_url))
-                        print('\n\n' + '*' * 72 + '\n\n')
-
-                    embed = discord.Embed(
-                        colour=self.embed_color, title='Blue Dot Vapors')
-                    if img_url:
-                        embed.set_image(url=img_url)
-                    embed.add_field(name='Website', value=url)
-                    embed.add_field(name='Processing', value=ship_str)
-                    embed.add_field(name='About', value=about_str)
-
-                    await self.bot.say(embed=embed)
+            await self.say_about(mode)
         else:
-            await self.get_flavor(flavor, 0)
-
-    @vape.command(name='wlj', aliases=['whitelabel', 'whitelabeljuiceco'])
-    async def wlj(self, *, flavor: str):
-        """Search for a flavor on White Label Juice Co.'s website."""
-        await self.get_flavor(flavor, 1)
+            await self.get_flavor(flavor, mode)
 
     async def get_flavor(self, flavor, mode):
         """Core method. Performs query, embed building, and output."""
@@ -284,7 +318,8 @@ class VapeNaysh:
 
     def get_logo(self, soup, mode):
         if mode is 0:
-            return 'https:' + soup.find('a', {'id': 'logo'}).find('img').get('src')
+            return 'https:' + soup.find(
+                'a', {'id': 'logo'}).find('img').get('src')
         elif mode is 1:
             pass
         return ''
