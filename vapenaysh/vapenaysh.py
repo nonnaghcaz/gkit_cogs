@@ -57,7 +57,7 @@ class VapeNaysh:
             url = (
                 'https://www.bluedotvapors.com/' +
                 'collections/eliquid/products/' +
-                flavor)
+                flavor.replace(' ', '-'))
             async with aiohttp.ClientSession() as session:
                 async with session.get(url) as response:
                     if response.status is 200:
