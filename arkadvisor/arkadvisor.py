@@ -36,8 +36,7 @@ class ArkAdvisor:
     async def ark(self, context):
         if not soupAvailable:
             await self.bot.say('Sorry, you need BeautifulSoup4 installed.')
-        if context.invoked_subcommand is None:
-            await self.bot.say('Type `[p]help ark` for info.')
+        await self.bot.say('Type `[p]help ark` for info.')
 
     @ark.command(name='test', pass_context=True, hidden=True)
     @checks.serverowner_or_permissions(administrator=True)
@@ -115,9 +114,9 @@ class ArkAdvisor:
         if not params:
             await self.bot.say(
                 'Sorry, the following parameter structures were expected:\n'
-                '\t<BlueprintPath> <Quantity> <Quality> <ForceBlueprint>\n'
+                '\t`<BlueprintPath> <Quantity> <Quality> <ForceBlueprint>`\n'
                 'OR\n'
-                '\t<ItemNum> <Quantity> <Quality> <ForceBlueprint>')
+                '\t`<ItemNum> <Quantity> <Quality> <ForceBlueprint>`')
         else:
             # Parse params string by:
             #   1. Pipe (|): Aligns with ARK's method of command separation
