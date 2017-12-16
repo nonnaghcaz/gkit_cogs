@@ -100,7 +100,22 @@ class VapeNaysh:
         name='bdv', aliases=['bluedot', 'bluedotvapors'])
     async def bdv(self, *, flavor: str):
         """Search for a flavor on Blue Dot Vapor's website."""
-        await self.get_flavor(flavor, 0)
+        if flavor.upper() in 'ABOUT':
+            pass
+        elif flavor.upper() in 'CONTACT':
+            pass
+        elif flavor.upper() in ['SHIPPING', 'SHIP', 'PROCESSING']:
+            url = 'https://www.bluedotvapors.com/'
+            ship_str = ''
+            async with aiohttp.ClientSession() as session:
+                async with session.get(url) as response:
+                    if response.status is 200:
+                        data = await response.text()
+                        soup = BeautifulSoup(data, 'html.parser')
+                        ship_str = self.get_shipping(soup, 0)
+            await self.bot.say(ship_str)
+        else:
+            await self.get_flavor(flavor, 0)
 
     @vape.command(name='wlj', aliases=['whitelabel', 'whitelabeljuiceco'])
     async def wlj(self, *, flavor: str):
@@ -214,6 +229,29 @@ class VapeNaysh:
             imgs = soup.find_all(
                 'img', {'class': 'ProductImg-product'})
             return imgs[random.randint(0, len(imgs))].get('src')
+        return ''
+
+    def get_shipping(self, soup, mode):
+        if mode is 0:
+            return soup.find(
+                'div', {'id': 'welcome-text'}).find(
+                    'div').find('p').find('span').getText()
+        elif mode is 1:
+            pass
+        return ''
+
+    def get_about(self, soup, mode):
+        if mode is 0:
+            pass
+        elif mode is 1:
+            pass
+        return ''
+
+    def get_contact(self, soup, mode):
+        if mode is 0:
+            pass
+        elif mode is 1:
+            pass
         return ''
 
 

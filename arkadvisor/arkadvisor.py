@@ -106,7 +106,7 @@ class ArkAdvisor:
 
     @ark.group(name='cheat', invoke_without_command=True)
     async def cheat(self):
-        pass
+        await self.bot.say('Type `[p]help ark cheat` for info.')
 
     @cheat.command(name='give', aliases=['giveitem', 'giveitemnum'])
     async def give(self, *, params: str=None):
