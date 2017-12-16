@@ -22,6 +22,8 @@ tobacco.
 import discord
 from discord.ext import commands
 
+from .utils import checks
+
 try:
     # check if BeautifulSoup4 is installed
     from bs4 import BeautifulSoup
@@ -31,6 +33,8 @@ except ValueError:
 
 import aiohttp
 import random
+
+COLOR = 0x6441A4
 
 
 class VapeNayshError(Exception):
@@ -49,19 +53,38 @@ class VapeNaysh:
         if context.invoked_subcommand is None:
             await self.bot.say('Type `[p]help vape` for info.')
 
+    @vape.command(name='color')
+    @checks.serverowner_or_permissions(administrator=True)
+    async def set_color(self, *, color: str):
+        if color[0] is '#' and len(color) is 7:
+            COLOR = '0x' + color[1:]
+        elif color[0:2].upper() in '0X':
+            COLOR = color
+        elif (
+                len(color.split(' ')) is 3 and
+                all([len(x) <= 3 for x in color.split(' ')])):
+            # convert rgb triple to hex
+            pass
+        else:
+            COLOR = 0x6441A4
+
     @vape.command(
         name='bdv', aliases=['bluedot', 'bluedotvapors'])
     async def bdv(self, *, flavor: str):
+        """Search for a flavor on Blue Dot Vapor's website."""
         await self.get_flavor(flavor, 0)
 
     @vape.command(name='wlj', aliases=['whitelabel', 'whitelabeljuiceco'])
     async def wlj(self, *, flavor: str):
+        """Search for a flavor on White Label Juice Co.'s website."""
         await self.get_flavor(flavor, 1)
 
     async def get_flavor(self, flavor, mode):
+        """Core method. Performs query, embed building, and output."""
         if not flavor:
-            await self.bot.say("Type `[p]help vape wlj` for info.")
+            await self.bot.say("Sorry, you must specify a flavor.")
         else:
+            # Determine the correct url
             if mode is 0:
                 url = (
                     'https://www.bluedotvapors.com/' +
@@ -72,6 +95,11 @@ class VapeNaysh:
                     'https://whitelabeljuiceco.com/' +
                     'collections/whitelabel-juice/products/' +
                     flavor.replace(' ', '-')) + '-100ml'
+            else:
+                self.bot.say(
+                    "I don't know how this happened, but an invalid mode was "
+                    "passed to `get_flavor()` method. Please notify "
+                    "Gannon#0851.")
             async with aiohttp.ClientSession() as session:
                 async with session.get(url) as response:
                     if response.status is 200:
@@ -99,7 +127,7 @@ class VapeNaysh:
                         name = self.get_name(soup, mode)
                         name_str = '_**' + name + '**_ ' + tag
 
-                        embed = discord.Embed(colour=0x6441A4, title=name_str)
+                        embed = discord.Embed(colour=COLOR, title=name_str)
                         embed.set_thumbnail(url=img_url)
                         embed.add_field(
                             name='Buy', value=url)
