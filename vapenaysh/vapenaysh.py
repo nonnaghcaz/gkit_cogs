@@ -303,7 +303,8 @@ class VapeNaysh:
         elif mode is 1:
             imgs = soup.find_all(
                 'img', {'class': 'ProductImg-product'})
-            return 'http:' + imgs[random.randint(0, len(imgs))].get('src')
+            return 'https:' + self.get_random([
+                x.get('src') for x in imgs])
         return None
 
     def get_processing_message(self, soup, mode):
@@ -348,11 +349,11 @@ class VapeNaysh:
             #         'div').get('data-img-src')
             index_s = len('background-image: url(/')
             index_e = len(');')
-            imgs = soup.find(
-                'div', {'id': 'Instafeed-index-instagram'}).find_all(
-                    'a')
+            insta_feed = soup.find(
+                'div', {'id': 'Instafeed-index-instagram'})
+            imgs = insta_feed.find_all('a')
         return 'https:' + self.get_random([
-            x[index_s:-index_e] for x in imgs.get('style')])
+            x.get('style')[index_s:-index_e] for x in imgs])
         return None
 
     def get_random(self, arr):
