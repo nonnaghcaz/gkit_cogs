@@ -55,7 +55,7 @@ class ArkAdvisor:
 
     @ark.command(
         name='tame', pass_context=True, aliases=[])
-    async def tame(self, context, dino: str):
+    async def tame(self, context, *, dino: str):
         if not dino:
             await self.bot.say("Type `[p]help ark tame` for info.")
         elif not self.check_dino_is_tamable(dino):
