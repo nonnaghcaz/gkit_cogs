@@ -34,7 +34,8 @@ except ValueError:
 import aiohttp
 import random
 
-COLOR = 0x6441A4
+DEFAULT_COLOR = 0x6441A4
+COLOR = DEFAULT_COLOR
 
 
 class VapeNayshError(Exception):
@@ -65,8 +66,10 @@ class VapeNaysh:
                 all([len(x) <= 3 for x in color.split(' ')])):
             # convert rgb triple to hex
             pass
+        elif int(color) > 0:
+            COLOR = int(color)
         else:
-            COLOR = 0x6441A4
+            COLOR = DEFAULT_COLOR
 
         embed = discord.Embed(colour=COLOR)
         embed.add_field(
@@ -74,7 +77,6 @@ class VapeNaysh:
                 context.message.author.mention +
                 ' changed the embed color to {}'.format(COLOR)))
         await self.bot.say(embed=embed)
-
 
     @vape.command(
         name='bdv', aliases=['bluedot', 'bluedotvapors'])
