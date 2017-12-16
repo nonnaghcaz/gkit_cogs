@@ -103,9 +103,9 @@ class ArkAdvisor:
                             'Sorry, could not find your dino: {}'.format(
                                 dino))
 
-    @ark.group(name='cheat', invoke_without_command=True)
-    async def cheat(self):
-        await self.bot.say('Type `[p]help ark cheat` for info.')
+    @ark.group(name='cheat', pass_context=True, invoke_without_command=True)
+    async def cheat(self, context=None):
+        await self.bot.send_cmd_help(context)
 
     @cheat.command(name='give', aliases=['giveitem', 'giveitemnum'])
     async def give(self, *, params: str=None):
