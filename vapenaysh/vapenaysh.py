@@ -134,8 +134,9 @@ class VapeNaysh:
                         colour=self.embed_color, title='Blue Dot Vapors')
                     if img_url:
                         embed.set_image(url=img_url)
-                    embed.add_field(name='About', value=about_str)
+                    embed.add_field(name='Website', value=url)
                     embed.add_field(name='Processing', value=ship_str)
+                    embed.add_field(name='About', value=about_str)
 
                     await self.bot.say(embed=embed)
         else:
