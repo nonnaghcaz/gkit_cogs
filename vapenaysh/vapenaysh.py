@@ -68,9 +68,13 @@ class VapeNaysh:
         else:
             COLOR = 0x6441A4
 
-        await self.bot.say(
-            context.message.author.mention +
-            ' changed the embed color to {}'.format(COLOR))
+        embed = discord.Embed(colour=COLOR, title='Demo')
+        embed.add_field(
+            name='Demo', value=(
+                context.message.author.mention +
+                ' changed the embed color to {}'.format(COLOR)))
+        await self.bot.say(embed=embed)
+
 
     @vape.command(
         name='bdv', aliases=['bluedot', 'bluedotvapors'])
