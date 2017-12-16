@@ -352,8 +352,9 @@ class VapeNaysh:
             index_e = len(');')
             imgs = soup.find_all(
                 'a', {'style': re.compile('background-image: url')})
-        return 'https:' + self.get_random([
-            x.get('style')[index_s:-index_e] for x in imgs])
+            if imgs:
+                return 'https:' + self.get_random([
+                    x.get('style')[index_s:-index_e] for x in imgs])
         return None
 
     def get_random(self, arr):
