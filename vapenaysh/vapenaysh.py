@@ -85,7 +85,7 @@ class VapeNaysh:
                         name = self.get_name(soup)
                         name_str = '_**' + name + '**_ ' + tag
 
-                        embed = discord.Embed(colour=0x9933FF, title=name_str)
+                        embed = discord.Embed(colour=0x6441A4, title=name_str)
                         embed.set_thumbnail(url=img_url)
                         embed.add_field(
                             name='Buy', value=url)

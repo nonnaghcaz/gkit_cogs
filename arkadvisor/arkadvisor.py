@@ -83,7 +83,7 @@ class ArkAdvisor:
                         print('*' * 72 + '\n\n')
 
                         embed = discord.Embed(
-                            colour=0x9933FF,
+                            colour=0x6441A4,
                             title=title)
                         embed.set_thumbnail(url=img_url)
                         embed.add_field(
