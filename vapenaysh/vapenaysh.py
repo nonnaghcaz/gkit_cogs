@@ -33,6 +33,7 @@ except ValueError:
 
 import aiohttp
 import random
+import re
 
 DEFAULT_COLOR = 0x6441A4
 
@@ -349,9 +350,8 @@ class VapeNaysh:
             #         'div').get('data-img-src')
             index_s = len('background-image: url(/')
             index_e = len(');')
-            insta_feed = soup.find(
-                'div', {'id': 'Instafeed-index-instagram'})
-            imgs = insta_feed.find_all('a')
+            imgs = soup.find_all(
+                'a', {'style': re.compile('background-image: url')})
         return 'https:' + self.get_random([
             x.get('style')[index_s:-index_e] for x in imgs])
         return None
