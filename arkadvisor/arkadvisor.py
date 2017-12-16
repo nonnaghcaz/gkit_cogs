@@ -73,8 +73,10 @@ class ArkAdvisor:
                         kibble = self.get_kibble(soup)
                         img_url = self.get_dossier_image(soup)
                         method = self.get_method(soup)
-                        title = str(soup.title)[
-                            len('<title>'):-len('</title>')]
+                        title_s = len('<title>')
+                        title_e = len(
+                            ' - Official ARK: Survival Evolved Wiki</title>')
+                        title = str(soup.title)[title_s:-title_e]
 
                         print('\n\n' + '*' * 72 + '\n\n')
                         print('Title:  \t' + title)
@@ -134,7 +136,7 @@ class ArkAdvisor:
     def get_kibble(self, soup):
         try:
             ret_val = soup.find(
-                'a', {'href': re.compile('/Kibble \(')}).getText()
+                'a', {'href': re.compile('/Kibble (')}).getText()
         except Exception:
             ret_val = 'ERROR'
         return ret_val
