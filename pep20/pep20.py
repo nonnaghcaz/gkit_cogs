@@ -34,7 +34,7 @@ class BDFL:
         self.bot = bot
 
     @commands.group(name='bdfl', invoke_without_command=True)
-    async def bdfl(self, context):
+    async def bdfl(self):
         await self.bot.say("Type `[p]help bdfl` for info.")
 
     @bdfl.command(name='preach', pass_context=True)
