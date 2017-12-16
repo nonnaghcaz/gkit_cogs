@@ -103,7 +103,7 @@ class VapeNaysh:
 
         # DEBUG
         print('\n\n' + '*' * 72 + '\n\n')
-        print('[vape.bdv] flavor: {}'.format(flavor))
+        print('[vape.bdv] flavor:\n\t{}'.format(flavor))
         print('\n\n' + '*' * 72 + '\n\n')
 
         if flavor.upper() in 'CONTACT':
@@ -123,10 +123,17 @@ class VapeNaysh:
                         about_str = self.get_about(soup, 0)
                         img_url = self.get_logo(soup, 0)
 
+                        # DEBUG
+                        print('\n\n' + '*' * 72 + '\n\n')
+                        print('[vape.bdv] ship_str:\n\t{}'.format(ship_str))
+                        print('[vape.bdv] about_str:\n\t{}'.format(about_str))
+                        print('[vape.bdv] img_url:\n\t{}'.format(img_url))
+                        print('\n\n' + '*' * 72 + '\n\n')
+
                     embed = discord.Embed(
                         colour=self.embed_color, title='Blue Dot Vapors')
                     if img_url:
-                        embed.set_image(img_url)
+                        embed.set_image(url=img_url)
                     embed.add_field(name='About', value=about_str)
                     embed.add_field(name='Processing', value=ship_str)
 
