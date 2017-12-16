@@ -50,7 +50,7 @@ class VapeNaysh:
 
     @vape.command(
         name='bdv', pass_context=True, aliases=['bluedot', 'bluedotvapors'])
-    async def bdv(self, context, flavor):
+    async def bdv(self, context, *, flavor: str):
         if not flavor:
             await self.bot.say("Type `[p]help vape bdv` for info.")
         else:
