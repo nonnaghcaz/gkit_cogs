@@ -4,6 +4,8 @@
 
 # Gannon Toolkit Library - Cogs (gkit_cogs)
 
+Shoot me a discord message: **ＧＡＮＮＯＮ#0851**
+
 ---
 
 ## DESCRIPTION
@@ -25,6 +27,8 @@ The following is a list of my available cogs.
 
 ---
 
+## QUALITY 10/10 WOULD DOWNLOAD AGAIN COGS
+
 [:book:](https://github.com/gannon93/gkit_cogs/wiki/ArkAdvisor) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/arkadvisor/) **[ALPHA]** _**ArkAdvisor**_ (`arkadvisor`)
   - All of your _**ARK: Survival Evolved**_ needs at your fingertips.
   - Requires:
@@ -40,6 +44,22 @@ The following is a list of my available cogs.
 
 ---
 
+[:book:](https://github.com/gannon93/gkit_cogs/wiki/VapeNaysh) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/vapenaysh/) **[NEW]** _**VapeNaysh**_ (`vapenaysh`)
+  - Vape Naysh yall `\//\`
+  - Requires:
+    - [BeautifulSoup4](https://pypi.python.org/pypi/beautifulsoup4) (`pip install beautifulsoup4`)
+  - Commands:
+    - `vape`
+
+      | Sub-Command | Options | Description |
+      | ----------- | ------- | ----------- |
+      | _bdv_ | - `flavor`| Search for a flavor on Blue Dot Vapors |
+      | _wlj_ | - `flavor`| Search for a flavor on White Label Juice Co. |
+
+---
+
+## GARBAGE COGS
+
 [:book:](https://github.com/gannon93/gkit_cogs/wiki/BASTA!) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/basta/) _**BASTA!**_ (`basta`)
   - And so the lord said to me, _**BASTA!**_
   - Commands:
@@ -49,7 +69,7 @@ The following is a list of my available cogs.
       | ----------- | ------- | ----------- |
       | _santa_ | | |
       | _satan_ | | |
-      | _user_ | `user` | |
+      | _user_ | - `user` | |
 
 ---
 
@@ -89,6 +109,20 @@ The following is a list of my available cogs.
 
 ---
 
+[:book:](https://github.com/gannon93/gkit_cogs/wiki/WannaCookie) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/wannacookie/) _**WannaCookie**_ (`wannacookie`)
+  - What, do you want a... ?
+  - Commands:
+    - `wanna`
+
+      | Sub-Command | Options | Description |
+      | ----------- | ------- | ----------- |
+      | _cookie_ | - `user` | |
+      | _goldstar_ | - `user` | |
+
+---
+
+## SUSPENDED COGS
+
 [:book:](https://github.com/gannon93/gkit_cogs/wiki/SaltyDebt) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/saltydebt/) **[SUSPENDED]** _**SaltyDebt**_ (`saltydebt`)
   - Feed your Salty Bet gambling addiction.
   - Commands:
@@ -102,39 +136,13 @@ The following is a list of my available cogs.
 
 ---
 
-[:book:](https://github.com/gannon93/gkit_cogs/wiki/VapeNaysh) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/vapenaysh/) **[NEW]** _**VapeNaysh**_ (`vapenaysh`)
-  - Vape Naysh yall `\//\`
-  - Requires:
-    - [BeautifulSoup4](https://pypi.python.org/pypi/beautifulsoup4) (`pip install beautifulsoup4`)
-  - Commands:
-    - `vape`
-
-      | Sub-Command | Options | Description |
-      | ----------- | ------- | ----------- |
-      | _bdv_ | `name-of-flavor`| Search for a flavor on Blue Dot Vapors |
-      | _wlj_ | `name-of-flavor`| Search for a flavor on White Label Juice Co. |
-
----
-
-[:book:](https://github.com/gannon93/gkit_cogs/wiki/WannaCookie) [:mute:](https://cogs.red/cogs/gannon93/gkit_cogs/wannacookie/) _**WannaCookie**_ (`wannacookie`)
-  - What, do you want a... ?
-  - Commands:
-    - `wanna`
-
-      | Sub-Command | Options | Description |
-      | ----------- | ------- | ----------- |
-      | _cookie_ | `user` | |
-      | _goldstar_ | `user` | |
-
----
-
 ## INSTALLATION
 
 These cogs are in _**very**_ early development, but can be downloaded through Red's distributor and [Cogs.Red](https://cogs.red/cogs/gannon93/gkit_cogs/):  
 
   - `[p]cog repo add gkit_cogs https://github.com/gannon93/gkit_cogs`
   - `[p]cog install gkit_cogs <cog>`
-    - Available `<cog>` options: `basta`, `flavorsavor`, `pep20`, `vapenaysh`, `wannacookie`
+    - Available `<cog>` options: `arkadvisor`, `basta`, `flavorsavor`, `pep20`, `vapenaysh`, `wannacookie`
 
 ---
 
