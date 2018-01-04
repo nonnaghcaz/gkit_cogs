@@ -4,7 +4,8 @@
 
 # Gannon Toolkit Library - Cogs (gkit_cogs)
 
-Shoot me a discord message: **Gannon#0851**
+_**Join my Discord server: https://discord.gg/zw7NmT**_  
+Or just shoot me a discord message: **Gannon#0851**    
 
 ---
 
